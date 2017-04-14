@@ -1,7 +1,7 @@
 import React from 'react'
-import { Row } from './Row'
+import Row from './Row'
 
-export const Table = ({ zones, calendar }) => {
+export default ({ zones, calendar }) => {
   return <table className="table table-responsive table-bordered table-striped">
     <thead>
       <tr>

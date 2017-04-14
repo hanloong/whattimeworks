@@ -1,12 +1,8 @@
 import React from 'react'
-import { Cell } from './Cell'
+import Cell from './Cell'
 
-export const Row = ({ row }) => {
-  let classes = row.valid ? "table-success" : ""
-  
-  if (!row.valid) {
-    return null
-  }
+export default ({ row }) => {
+  const classes = row.valid ? "table-success" : ""
 
   return <tr className={ classes }>
     {
