@@ -14,11 +14,7 @@ const initialState = {
 export default function zones(state = initialState, action) {
   switch (action.type) {
     case UPDATE_ZONES:
-      return Object.assign(
-        {},
-        state,
-        { zones: action.zones }
-      )
+      return { ...state, zones: action.zones }
     default:
       return state
   }
