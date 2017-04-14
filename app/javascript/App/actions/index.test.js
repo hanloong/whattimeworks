@@ -12,6 +12,6 @@ test('creates update zones actions', () => {
 
 test('toggle matchOnly', () => {
   expect(actions.toggleMatchesOnly()).toEqual({
-    type: types.TOGGLE_MATCHES_ONLY,
+    type: types.TOGGLE_MATCHES_ONLY
   })
 })
