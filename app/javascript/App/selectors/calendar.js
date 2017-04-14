@@ -18,7 +18,7 @@ const getCalendarState = (state) => {
       times: times,
       valid: times.every(time => time.valid)
     }
-  ))
+  )).filter(times => state.matchesOnly ? times.valid : true)
 }
 
 const isValidTime = (state, time) => {

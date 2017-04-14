@@ -1,7 +1,7 @@
 import React from 'react'
-import { Table } from './Table'
+import Table from './Table'
 
-export const Calendar = ({ calendar, zones }) => (
+export default ({ calendar, zones }) => (
   <div className="row">
     <Table
       zones={ zones }

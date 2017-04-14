@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import moment from 'moment-timezone'
 import { Link } from 'react-router-dom'
+import SettingsMatchesOnly from './Settings/MatchesOnly'
 
-export class Settings extends Component {
+export default class Settings extends Component {
   constructor(props) {
     super(props)
 
@@ -11,7 +12,7 @@ export class Settings extends Component {
 
   handleChange(event) {
     let selected = Array.apply(null, event.target.options).filter(o => o.selected).map(o => o.value)
-    this.props.updateZones(selected)
+    this.props.actions.updateZones(selected)
   }
 
   render() {
@@ -23,8 +24,11 @@ export class Settings extends Component {
       <div className='row pt-5 justify-content-md-center'>
         <div className='col col-lg-6'>
           <form>
+            <h1 className='pb-2'>Settings</h1>
+            <SettingsMatchesOnly
+              checked={ this.props.state.matchesOnly }
+              onChange={ this.props.actions.toggleMatchesOnly } />
             <div className='form-group'>
-              <h1 className='pb-2'>Settings</h1>
               <select
                 className='form-control'
                 multiple

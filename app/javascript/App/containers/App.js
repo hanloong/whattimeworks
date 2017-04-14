@@ -1,9 +1,9 @@
 import React from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { Calendar } from '../components/Calendar/'
-import { Header } from '../components/Header'
-import { Settings } from '../components/Settings'
+import Calendar from '../components/Calendar/'
+import Header from '../components/Header'
+import Settings from '../components/Settings'
 import getCalendarState from '../selectors/calendar'
 import getZonesState from '../selectors/zones'
 import * as ZoneActions from '../actions'
@@ -25,7 +25,8 @@ const App = ({zones, calendar, state,  actions}) => (
         )}/>
         <Route path="/settings" render={() => (
           <Settings
-            updateZones={ actions.updateZones }/>
+            state={ state }
+            actions={ actions } />
         )}/>
       </div>
     </div>
