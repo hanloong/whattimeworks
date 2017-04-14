@@ -1,17 +1,15 @@
 import React from 'react'
-import Cell from './Cell'
+import { Cell } from './Cell'
 
-const Row = ({ zones, time}) => (
+export const Row = ({ row }) => (
   <tr>
     {
-      zones.map(zone =>
+      row.map(({ zone, time }, i) =>
         <Cell
-          key={ zone }
+          key={ i }
           zone={ zone }
           time={ time } />
       )
     }
   </tr>
 )
-
-module.exports = Row

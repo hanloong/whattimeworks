@@ -1,9 +1,5 @@
 import React from 'react'
 
-const Cell = ({ time, zone }) => (
-  <td key={ zone }>
-    { time.tz(zone).calendar() }
-  </td>
+export const Cell = ({ time, zone }) => (
+  <td key={ zone }>{ time }</td>
 )
-
-module.exports = Cell

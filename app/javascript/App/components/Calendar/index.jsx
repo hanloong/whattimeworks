@@ -1,14 +1,10 @@
 import React from 'react'
-import Table from './Table'
+import { Table } from './Table'
 
-const Calendar = ({ zones, sourceZone, step }) => (
+export const Calendar = ({ calendar, zones }) => (
   <div className="row">
     <Table
-      zones={ [sourceZone, ...zones] }
-      step={ step }
-      steps={ (24 * 60) / step }
-      baseZone={ sourceZone }/>
+      zones={ zones }
+      calendar={ calendar } />
   </div>
 )
-
-export default Calendar
