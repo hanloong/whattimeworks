@@ -6,24 +6,22 @@ import SettingsZones from './Settings/Zones'
 
 export default ({ state, actions }) => (
   <div className='container'>
-    <div className='row pt-5 justify-content-md-center'>
-      <div className='col col-lg-6'>
-        <form>
-          <h1 className='pb-2'>Settings</h1>
-          <SettingsMatchesOnly
-            checked={ state.matchesOnly }
-            onChange={ actions.toggleMatchesOnly } />
-          <SettingsZones
-            zones={ state.zones }
-            onChange={ actions.updateZones }/>
-          <Link
-            to='/'
-            role='button'
-            className='btn btn-primary'>
-            Done
-          </Link>
-        </form>
-      </div>
+    <div className='row pt-5'>
+      <form>
+        <h1 className='pb-2'>Settings</h1>
+        <SettingsMatchesOnly
+          checked={ state.matchesOnly }
+          onChange={ actions.toggleMatchesOnly } />
+        <SettingsZones
+          zones={ state.zones }
+          onChange={ actions.updateZones }/>
+        <Link
+          to='/'
+          role='button'
+          className='btn btn-primary'>
+          Done
+        </Link>
+      </form>
     </div>
   </div>
 )

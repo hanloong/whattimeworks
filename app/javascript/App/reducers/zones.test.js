@@ -9,7 +9,7 @@ test('returns the default state', () => {
   expect(state).toEqual(initialState)
 })
 
-test("updates zones", () => {
+test('updates zones', () => {
   const zones = ['US/Springfield']
   const state = reducer(undefined, {
     type: types.UPDATE_ZONES,

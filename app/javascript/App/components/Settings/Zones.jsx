@@ -1,5 +1,6 @@
 import moment from 'moment-timezone'
 import React, { Component } from 'react'
+import { niceZone } from '../../utils/formatter'
 
 export default class SettingsZones extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ export default class SettingsZones extends Component {
       <option
         key={ i }
         value={ tz }>
-        { tz.replace('/', ' - ').replace('_', ' ') }
+        { niceZone(tz) }
       </option>
     )
 
