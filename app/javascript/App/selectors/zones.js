@@ -1,5 +1,3 @@
-const getZonesState = ({ sourceZone, zones }) => {
+export default ({ sourceZone, zones }) => {
   return [sourceZone, ...zones]
 }
-
-module.exports = getZonesState

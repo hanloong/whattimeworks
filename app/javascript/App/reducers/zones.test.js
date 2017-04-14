@@ -18,3 +18,12 @@ test('updates zones', () => {
 
   expect(state.zones).toEqual(zones)
 })
+
+test('toggles matches flag', () => {
+  const matchesOnly = initialState.matchesOnly
+  const state = reducer(initialState, {
+    type: types.TOGGLE_MATCHES_ONLY
+  })
+
+  expect(state.matchesOnly).toEqual(!matchesOnly)
+})
