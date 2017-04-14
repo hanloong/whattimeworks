@@ -1,9 +1,9 @@
 language: ruby
 rvm:
   - 2.4.0
-node_js:
-  - 7
 before_script:
+  - "nvm install 7.8.0"
+  - "nvm use 7.8.0"
   - "npm install -g yarn"
   - "yarn"
   - "bundle exec rake db:drop db:create db:migrate"
