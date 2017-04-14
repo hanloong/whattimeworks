@@ -1,5 +1,11 @@
 language: ruby
 rvm:
   - 2.4.0
-before_script: "bundle exec rake db:drop db:create db:migrate"
-script: "bundle exec rspec spec/"
+node_js:
+  - 7
+before_script:
+  - "yarn install"
+  - "bundle exec rake db:drop db:create db:migrate"
+script:
+  - "npm test"
+  - "bundle exec rspec spec/"
