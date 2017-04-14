@@ -1,28 +1,25 @@
 import React, { Component } from 'react'
-import moment from 'moment-timezone'
+import { Link } from 'react-router-dom'
 
 export class Header extends Component {
-  constructor(props) {
-    super(props)
-
-    this.handleChange = this.handleChange.bind(this)
-  }
-
-  handleChange(event) {
-    let selected = Array.apply(null, event.target.options).filter(o => o.selected).map(o => o.value)
-    this.props.updateZones(selected)
-  }
-
   render() {
-    let zoneOptions = moment.tz.names().map(tz =>
-      <option key={ tz }>{ tz }</option>
-    )
-
-    return <select
-      multiple
-      onChange={ this.handleChange }
-      className="form-control">
-      { zoneOptions }
-    </select>
+    return <nav className="navbar navbar-toggleable-md navbar-light bg-faded">
+      <Link
+        className='navbar-brand'
+        to='/'>
+        { this.props.date.format('dddd, MMMM Do YYYY') }
+      </Link>
+      <div className="collapse navbar-collapse">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item">
+            <Link
+              className='nav-link'
+              to='/settings'>
+              Settings
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   }
 }

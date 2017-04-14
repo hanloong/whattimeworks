@@ -1,15 +1,20 @@
 import React from 'react'
 import { Cell } from './Cell'
 
-export const Row = ({ row }) => (
-  <tr>
+export const Row = ({ row }) => {
+  let classes = row.valid ? "table-success" : ""
+  
+  if (!row.valid) {
+    return null
+  }
+
+  return <tr className={ classes }>
     {
-      row.map(({ zone, time }, i) =>
+      row.times.map((row, i) =>
         <Cell
           key={ i }
-          zone={ zone }
-          time={ time } />
+          time={ row } />
       )
     }
   </tr>
-)
+}

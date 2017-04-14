@@ -6,12 +6,12 @@ const initialState = {
   sourceZone: "Australia/Sydney",
   zones: [],
   step: 30,
-  startTime: "9:00am",
-  endTime: "5:00pm",
-  validDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+  startTime: (9 * 60),
+  endTime: (17 * 60),
+  validDays: [1, 2, 3, 4, 5],
 }
 
-export default function zones(state = initialState, action) {
+export default (state = initialState, action) => {
   switch (action.type) {
     case UPDATE_ZONES:
       return { ...state, zones: action.zones }

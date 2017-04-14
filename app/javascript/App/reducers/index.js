@@ -1,8 +1,6 @@
 import { combineReducers } from 'redux'
 import zones from './zones'
 
-const rootReducer = combineReducers({
+export default combineReducers({
   zones
 })
-
-export default rootReducer
