@@ -4,6 +4,9 @@ parserOptions:
   ecmaFeatures:
     jsx: true
 
+plugins:
+  - babel-eslint
+
 env:
   amd: true
   browser: true
