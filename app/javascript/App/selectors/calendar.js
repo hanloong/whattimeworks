@@ -27,7 +27,7 @@ const isValidTime = (state, time) => {
 
   return validDays.includes(time.isoWeekday())
     && minutes >= startTime
-    && minutes <= endTime
+    && minutes < endTime
 }
 
 module.exports = getCalendarState

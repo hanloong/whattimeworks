@@ -4,11 +4,10 @@ import { Link } from 'react-router-dom'
 export default ({ date }) => (
   <nav className='navbar navbar-light bg-faded'>
     <form className='form-inline'>
-      <Link
-        to='/'
+      <span
         className='navbar-brand'>
         { date.format('dddd, MMMM Do YYYY') }
-      </Link>
+      </span>
 
       <Link
         className='btn btn-outline-primary'

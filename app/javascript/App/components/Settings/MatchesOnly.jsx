@@ -19,7 +19,7 @@ export default class SettingsMatchesOnly extends Component {
         <input
           type='checkbox'
           name='matchesOnly'
-          className='form-check-input'
+          className='form-check-input mr-3'
           checked={ checked }
           onChange={ this.handleChange } />
         Only show matching times?
