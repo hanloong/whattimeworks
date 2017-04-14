@@ -1,20 +1,12 @@
-import { UPDATE_ZONES } from '../constants/ActionTypes'
-import moment from 'moment-timezone'
-
-const initialState = {
-  date: moment.tz("Australia/Sydney").startOf("day"),
-  sourceZone: "Australia/Sydney",
-  zones: [],
-  step: 30,
-  startTime: (9 * 60),
-  endTime: (17 * 60),
-  validDays: [1, 2, 3, 4, 5],
-}
+import { UPDATE_ZONES, TOGGLE_MATCHES_ONLY } from '../constants/ActionTypes'
+import initialState from '../constants/state'
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case UPDATE_ZONES:
       return { ...state, zones: action.zones }
+    case TOGGLE_MATCHES_ONLY:
+      return { ...state, matchesOnly: !state.matchesOnly }
     default:
       return state
   }

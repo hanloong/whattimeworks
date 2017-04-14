@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Cell = ({ time }) => {
+export default ({ time }) => {
   return <td key={ time.zone }>
     { time.time }
   </td>
