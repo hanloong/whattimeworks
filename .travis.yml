@@ -4,7 +4,8 @@ rvm:
 node_js:
   - 7
 before_script:
-  - "yarn install"
+  - "npm install -g yarn"
+  - "yarn"
   - "bundle exec rake db:drop db:create db:migrate"
 script:
   - "npm test"
