@@ -1,6 +1,9 @@
 language: ruby
 rvm:
   - 2.4.0
+addons:
+  code_climate:
+    repo_token: 4c79f3abbb6a45e3991b2212fef3e72ed6dc1393875867c2ae59833564148d7f
 before_script:
   - "nvm install 7.8.0"
   - "nvm use 7.8.0"

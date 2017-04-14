@@ -1,24 +1,17 @@
-# README
+# What Time Works
+---
+[![Build Status](https://travis-ci.org/hanloong/whattimeworks.svg?branch=master)](https://travis-ci.org/hanloong/whattimeworks)
+[![Code Climate](https://codeclimate.com/github/hanloong/whattimeworks/badges/gpa.svg)](https://codeclimate.com/github/hanloong/whattimeworks)
+[![Test Coverage](https://codeclimate.com/github/hanloong/whattimeworks/badges/coverage.svg)](https://codeclimate.com/github/hanloong/whattimeworks/coverage)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A little website to help you work out whats the best time for a meeting.
 
-Things you may want to cover:
+Built with
+* Ruby 2.4
+* Rails 5.1
+* PostgreSQL
+* ReactJs
+* Redux
+* MomentJS
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Deployed to Heroku
