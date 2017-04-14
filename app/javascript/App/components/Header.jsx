@@ -2,22 +2,19 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 export default ({ date }) => (
-  <nav className="navbar navbar-toggleable-md navbar-light bg-faded">
-    <Link
-      className='navbar-brand'
-      to='/'>
-      { date.format('dddd, MMMM Do YYYY') }
-    </Link>
-    <div className="collapse navbar-collapse">
-      <ul className="navbar-nav mr-auto">
-        <li className="nav-item">
-          <Link
-            className='nav-link'
-            to='/settings'>
-            Settings
-          </Link>
-        </li>
-      </ul>
-    </div>
+  <nav className='navbar navbar-light bg-faded'>
+    <form className='form-inline'>
+      <Link
+        to='/'
+        className='navbar-brand'>
+        { date.format('dddd, MMMM Do YYYY') }
+      </Link>
+
+      <Link
+        className='btn btn-outline-primary'
+        to='/settings'>
+        Settings
+      </Link>
+    </form>
   </nav>
 )
