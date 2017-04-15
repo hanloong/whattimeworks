@@ -1,0 +1,349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Print out a table 1`] = `
+<table
+  className="table table-responsive table-bordered table-striped"
+>
+  <thead>
+    <tr />
+  </thead>
+  <tbody>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 12:00 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 12:30 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 1:00 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 1:30 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 2:00 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 2:30 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 3:00 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 3:30 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 4:00 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 4:30 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 5:00 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 5:30 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 6:00 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 6:30 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 7:00 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 7:30 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 8:00 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 8:30 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 9:00 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 9:30 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 10:00 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 10:30 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 11:00 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 11:30 AM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 12:00 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 12:30 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 1:00 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 1:30 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 2:00 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 2:30 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 3:00 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 3:30 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 4:00 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 4:30 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 5:00 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 5:30 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 6:00 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 6:30 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 7:00 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 7:30 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 8:00 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 8:30 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 9:00 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 9:30 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 10:00 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 10:30 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 11:00 PM
+      </td>
+    </tr>
+    <tr
+      className=""
+    >
+      <td>
+        Today at 11:30 PM
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Print out a table cell 1`] = `
+exports[`Print out a table row 1`] = `
 <tr
   className=""
 >
