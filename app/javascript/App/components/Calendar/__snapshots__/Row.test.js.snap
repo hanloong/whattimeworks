@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Print out a table cell 1`] = `
+<tr
+  className=""
+>
+  <td>
+    Today at 12:00 AM
+  </td>
+</tr>
+`;

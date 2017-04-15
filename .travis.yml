@@ -13,3 +13,7 @@ before_script:
 script:
   - "npm test"
   - "bundle exec rspec spec/"
+notifications:
+  email:
+    on_success: never
+    on_failure: never
