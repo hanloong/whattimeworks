@@ -34,7 +34,7 @@ class ZoneAutoComplete extends Component {
   }
 
   render() {
-    const { zone, deletable } = this.props
+    const { zone, deletable, index } = this.props
     let deleteButton
 
     if (deletable) {
@@ -46,6 +46,7 @@ class ZoneAutoComplete extends Component {
 
     return <div>
       <AutoComplete
+        id={ `zone-auto-${index}` }
         hintText="Type a timezone"
         dataSource={ this.zones() }
         fullWidth={ true }

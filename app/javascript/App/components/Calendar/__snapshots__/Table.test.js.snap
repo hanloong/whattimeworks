@@ -118,7 +118,7 @@ exports[`Print out a table 1`] = `
                   <input
                     autoComplete="off"
                     disabled={false}
-                    id="undefined-Typeatimezone-undefined-17917"
+                    id="zone-auto-0"
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
@@ -261,7 +261,7 @@ exports[`Print out a table 1`] = `
                   <input
                     autoComplete="off"
                     disabled={false}
-                    id="undefined-Typeatimezone-undefined-6613"
+                    id="zone-auto-undefined"
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
