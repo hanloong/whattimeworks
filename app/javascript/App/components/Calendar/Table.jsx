@@ -9,8 +9,14 @@ import {
   TableRow
 } from 'material-ui/Table'
 
+const style = {
+  table: {}
+}
+
 export default ({ actions, zones, calendar }) => {
-  return <Table selectable={ false }>
+  return <Table
+    style={ style.table }
+    selectable={ false }>
     <TableHeader adjustForCheckbox={ false } displaySelectAll={ false }>
       <TableRow>
         {

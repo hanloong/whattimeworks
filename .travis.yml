@@ -1,19 +1,27 @@
 language: ruby
 rvm:
-  - 2.4.0
+- 2.4.0
 addons:
   code_climate:
     repo_token: 4c79f3abbb6a45e3991b2212fef3e72ed6dc1393875867c2ae59833564148d7f
 before_script:
-  - "nvm install 7.8.0"
-  - "nvm use 7.8.0"
-  - "npm install -g yarn"
-  - "yarn"
-  - "bundle exec rake db:drop db:create db:migrate"
+- nvm install 7.8.0
+- nvm use 7.8.0
+- npm install -g yarn
+- yarn
+- bundle exec rake db:drop db:create db:migrate
 script:
-  - "npm test"
-  - "bundle exec rspec spec/"
+- npm test
+- bundle exec rspec spec/
 notifications:
   email:
     on_success: never
     on_failure: never
+deploy:
+  provider: heroku
+  api_key:
+    secure: h2PKNLnT5nLDj0NWNWDI1g8ixN9iwyQWBXSk2iabJgQZM89pqLxv8mwKmtJLe/BafkOMwb+OrhKS8Fzs8lvL9FUo9rUb4r0zGKQv5PZKadASyv4nT+7YC40hMJ8QNZudnEep2mCDhWFWBvaxANkhntoUAWskRA51P4dj4I3hvmW1higjkl1PkCLSFZys81Jj0hdb/hRj7rw5k1LUR8ERBzr2QPMrDzTEmBG7xyoCRKLqTuJf0wC5YJHP4sJgOETWoSVWdOxE+QK6zHA+MCpRThoVZy7h61o8LCif1u5evfIA9MdaMLrkGqpU/VsV1S0krJeT0/aMiTYmj7JYx8sxuvJZHssWz7qmsyXOomzAbGWdSQJhpWQ9Gv/WgO6GCpP28QTzYNJwivCCGOt+QWSG7kd5ZUNmazzi/H/j3RO8bs+JnvxL1ECZ6PTvvOa6OGf8AR6WJFxy3rEmgMfvSYe730UO8eq5L1zYU1m7PLwzNO7uv7LErX1ROoGzfgknhfa4nFWEXW31mNPAEJvbXEK7qXIr8XTRGZbS50DJpKpJeExJC0nnAbUmZCvTFqnUX9c71tyI5c/8zM4x7MZAfmH+UC7keiqZ7n7iUbYnNNtsTG31u8vOfggoZ9ZKrg9kD/V4pB1OO7HtYWBJ20z/L0aJIgOABx88qRYCYP2P21r0aiA=
+  app: what-time-works
+  on:
+    repo: hanloong/whattimeworks
+    branch: master
