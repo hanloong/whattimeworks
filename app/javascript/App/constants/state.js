@@ -2,8 +2,7 @@ import moment from 'moment-timezone'
 
 export default {
   date: moment.tz('Australia/Sydney').startOf('day'),
-  sourceZone: 'Australia/Sydney',
-  zones: [],
+  zones: ['Australia/Sydney'],
   step: 30,
   startTime: (9 * 60),
   endTime: (17 * 60),

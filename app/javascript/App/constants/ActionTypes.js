@@ -1,2 +1,5 @@
 export const UPDATE_ZONES = 'UPDATE_ZONES'
+export const ADD_ZONE = 'ADD_ZONE'
+export const UPDATE_ZONE = 'UPDATE_ZONE'
+export const DELETE_ZONE = 'DELETE_ZONE'
 export const TOGGLE_MATCHES_ONLY = 'TOGGLE_MATCHES_ONLY'

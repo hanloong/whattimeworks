@@ -1,27 +1,43 @@
 import React from 'react'
 import Row from './Row'
-import { niceZone } from '../../utils/formatter'
+import ZoneAutoComplete from '../ZoneAutoComplete'
+import {
+  Table,
+  TableBody,
+  TableHeader,
+  TableHeaderColumn,
+  TableRow
+} from 'material-ui/Table'
 
-export default ({ zones, calendar }) => {
-  return <table
-    className='table table-responsive table-bordered table-striped'>
-    <thead>
-      <tr>
+export default ({ actions, zones, calendar }) => {
+  return <Table selectable={ false }>
+    <TableHeader adjustForCheckbox={ false } displaySelectAll={ false }>
+      <TableRow>
         {
           zones.map((zone, i) => (
-            <th key={ i}>
-              { niceZone(zone) }
-            </th>
+            <TableHeaderColumn key={ zone }>
+              <ZoneAutoComplete
+                actions={ actions }
+                index={ i }
+                deletable={ i > 1 }
+                value={ zone } />
+            </TableHeaderColumn>
           ))
         }
-      </tr>
-    </thead>
-    <tbody>
+        <TableHeaderColumn>
+          <ZoneAutoComplete
+            actions={ actions }
+            deletable={ zones.length > 1 }
+            value={ '' } />
+        </TableHeaderColumn>
+      </TableRow>
+    </TableHeader>
+    <TableBody>
       {
         calendar.map((row, i) => (
           <Row key={ i } row={ row } />
         ))
       }
-    </tbody>
-  </table>
+    </TableBody>
+  </Table>
 }

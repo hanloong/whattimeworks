@@ -1,3 +1,3 @@
 export const niceZone = (zone) => (
-  zone.replace('/', ' - ').replace('_', ' ')
+  zone.replace('/', ' - ').replace(/_/g, ' ')
 )

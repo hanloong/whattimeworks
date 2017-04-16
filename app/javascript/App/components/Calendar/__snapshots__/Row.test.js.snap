@@ -2,10 +2,56 @@
 
 exports[`Print out a table row 1`] = `
 <tr
-  className=""
+  className={undefined}
+  style={
+    Object {
+      "borderBottom": "1px solid #e0e0e0",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "height": 48,
+      "muiPrepared": true,
+    }
+  }
 >
-  <td>
+  <td
+    className={undefined}
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "fontSize": 13,
+        "height": 48,
+        "muiPrepared": true,
+        "overflow": "hidden",
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "textAlign": "left",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap",
+      }
+    }
+  >
     Today at 12:00 AM
   </td>
+  <td
+    className={undefined}
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "backgroundColor": "inherit",
+        "fontSize": 13,
+        "height": 48,
+        "muiPrepared": true,
+        "overflow": "hidden",
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "textAlign": "left",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap",
+      }
+    }
+  />
 </tr>
 `;

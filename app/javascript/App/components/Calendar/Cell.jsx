@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default ({ time }) => {
-  return <td key={ time.zone }>
+import { TableRowColumn } from 'material-ui/Table';
+
+const Cell = ({ time }) => {
+  return <TableRowColumn key={ time.zone }>
     { time.time }
-  </td>
+  </TableRowColumn>
 }
+
+module.exports = Cell

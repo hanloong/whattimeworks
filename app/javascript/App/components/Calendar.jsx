@@ -1,10 +1,18 @@
 import React from 'react'
 import Table from './Calendar/Table'
+import Paper from 'material-ui/Paper'
 
-export default ({ calendar, zones }) => (
-  <div className='row'>
+const style = {
+  paper: {
+    margin: '1em'
+  }
+}
+
+export default ({ actions, calendar, zones }) => (
+  <Paper style={ style.paper }>
     <Table
+      actions={ actions }
       zones={ zones }
       calendar={ calendar } />
-  </div>
+  </Paper>
 )

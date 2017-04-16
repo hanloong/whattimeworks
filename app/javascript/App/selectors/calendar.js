@@ -1,11 +1,11 @@
 import moment from 'moment-timezone'
 
 const getCalendarState = (state) => {
-  let { sourceZone, zones, step, date } = state
+  let { zones, step, date } = state
   let steps = (24 * 60) / step
 
   return [...Array(steps).keys()].map(i =>
-    [sourceZone, ...zones].map(zone => {
+    zones.map(zone => {
       let time = date.clone().add((i * step), 'm').tz(zone)
       return {
         zone: zone,
