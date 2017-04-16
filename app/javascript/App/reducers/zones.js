@@ -1,17 +1,16 @@
 import {
-  UPDATE_ZONES,
-  TOGGLE_MATCHES_ONLY,
   ADD_ZONE,
   DELETE_ZONE,
-  UPDATE_ZONE
+  TOGGLE_MATCHES_ONLY,
+  UPDATE_ZONE,
+  UPDATE_DATE
 } from '../constants/ActionTypes'
 import initialState from '../constants/state'
+import moment from 'moment-timezone'
 
 export default (state = initialState, action) => {
   let zones
   switch (action.type) {
-    case UPDATE_ZONES:
-      return { ...state, zones: action.zones }
     case ADD_ZONE:
       zones = [...state.zones, action.zone]
       return { ...state, zones: zones }
@@ -23,6 +22,10 @@ export default (state = initialState, action) => {
         return action.index === index ? zone : action.zone
       })
       return { ...state, zones: zones }
+    case UPDATE_DATE:
+      let zone = state.zones[0]
+      let date = moment(action.date).tz(zone).startOf('day')
+      return { ...state, date: date }
     case TOGGLE_MATCHES_ONLY:
       return { ...state, matchesOnly: !state.matchesOnly }
     default:

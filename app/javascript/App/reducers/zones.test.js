@@ -10,7 +10,7 @@ test('returns the default state', () => {
 })
 
 test('updates zones', () => {
-  const zones = ['US/Springfield']
+  const zones = ['Australia/Sydney']
   const state = reducer(undefined, {
     type: types.UPDATE_ZONES,
     zones: zones

@@ -1,29 +1,23 @@
 import React, { Component } from 'react'
+import Toggle from 'material-ui/Toggle'
 
 export default class SettingsMatchesOnly extends Component {
   constructor(props) {
     super(props)
 
-    this.handleChange = this.handleChange.bind(this)
+    this.handleToggle = this.handleToggle.bind(this)
   }
 
-  handleChange(event) {
-    this.props.onChange()
+  handleToggle() {
+    this.props.onToggle()
   }
 
   render() {
-    let { checked } = this.props
+    let { toggled } = this.props
 
-    return <div className='form-check'>
-      <label className='form-check-label'>
-        <input
-          type='checkbox'
-          name='matchesOnly'
-          className='form-check-input mr-3'
-          checked={ checked }
-          onChange={ this.handleChange } />
-        Only show matching times?
-      </label>
-    </div>
+    return <Toggle
+      label="Matches only"
+      toggled={ toggled }
+      onToggle={ this.handleToggle }/>
   }
 }

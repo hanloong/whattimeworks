@@ -7,10 +7,6 @@ import Settings from '../components/Settings'
 import getCalendarState from '../selectors/calendar'
 import * as ZoneActions from '../actions'
 import * as colors from 'material-ui/styles/colors'
-import {
-  BrowserRouter as Router, 
-  Route
-} from 'react-router-dom'
 
 const style = {
   app: {
@@ -19,22 +15,16 @@ const style = {
 }
 
 const App = ({zones, calendar, state,  actions}) => (
-  <Router>
-    <div style={ style.app }>
-      <Header date={ state.date } />
-      <Route exact path='/' render={() => (
-        <Calendar
-          actions={ actions }
-          zones={ state.zones }
-          calendar={ calendar } />
-      )}/>
-      <Route path='/settings' render={() => (
-        <Settings
-          state={ state }
-          actions={ actions } />
-      )}/>
-    </div>
-  </Router>
+  <div style={ style.app }>
+    <Header
+      actions={ actions }
+      state={ state }
+      date={ state.date } />
+    <Calendar
+      actions={ actions }
+      zones={ state.zones }
+      calendar={ calendar } />
+  </div>
 )
 
 const mapStateToProps = ({ zones: state }) => ({
