@@ -1,7 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Print out a table cell 1`] = `
-<td>
+<td
+  className={undefined}
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  style={
+    Object {
+      "fontSize": 13,
+      "height": 48,
+      "muiPrepared": true,
+      "overflow": "hidden",
+      "paddingLeft": 24,
+      "paddingRight": 24,
+      "textAlign": "left",
+      "textOverflow": "ellipsis",
+      "whiteSpace": "nowrap",
+    }
+  }
+>
   Today, 3pm
 </td>
 `;

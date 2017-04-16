@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import moment from 'moment-timezone'
 import { Link } from 'react-router-dom'
 import SettingsMatchesOnly from './Settings/MatchesOnly'
-import SettingsZones from './Settings/Zones'
 
 export default ({ state, actions }) => (
   <div className='container'>
@@ -12,9 +11,6 @@ export default ({ state, actions }) => (
         <SettingsMatchesOnly
           checked={ state.matchesOnly }
           onChange={ actions.toggleMatchesOnly } />
-        <SettingsZones
-          zones={ state.zones }
-          onChange={ actions.updateZones }/>
         <Link
           to='/'
           role='button'
