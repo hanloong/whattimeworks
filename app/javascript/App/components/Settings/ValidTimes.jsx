@@ -7,33 +7,23 @@ class SettingsValidTimes extends Component {
   constructor(props) {
     super(props)
 
-    this.handleStartTimeChange = this.handleStartTimeChange.bind(this)
-    this.handleEndTimeChange = this.handleEndTimeChange.bind(this)
+    this.handleTimeChange = this.handleTimeChange.bind(this)
   }
 
-  handleEndTimeChange(nullEvent, time) {
-    this.props.onEndTimeChange(time)
-  }
-
-  handleStartTimeChange(nullEvent, time) {
-    this.props.onStartTimeChange(time)
+  handleTimeChange(nullEvent, time) {
+    this.props.onTimeChange(time)
   }
 
   render() {
+    let { title, time } = this.props
+
     return <div>
-      <Subheader>Day starts at</Subheader>
+      <Subheader>{ title }</Subheader>
       <ListItem>
         <TimePicker
-          defaultTime={ this.props.startTime }
+          defaultTime={ time }
           id="startTime"
-          onChange={ this.handleStartTimeChange } />
-      </ListItem>
-      <Subheader>Day ends at</Subheader>
-      <ListItem>
-        <TimePicker
-          defaultTime={ this.props.endTime }
-          id="endTime"
-          onChange={ this.handleEndTimeChange } />
+          onChange={ this.handleTimeChange } />
       </ListItem>
     </div>
   }
