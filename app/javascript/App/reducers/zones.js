@@ -1,3 +1,5 @@
+import initialState from '../constants/state'
+import moment from 'moment-timezone'
 import {
   ADD_ZONE,
   DELETE_ZONE,
@@ -8,15 +10,13 @@ import {
   UPDATE_START_TIME,
   UPDATE_ZONE
 } from '../constants/ActionTypes'
-import initialState from '../constants/state'
-import moment from 'moment-timezone'
 
 export default (state = initialState, action) => {
   let zones
+
   switch (action.type) {
     case ADD_ZONE:
       zones = [...state.zones, action.zone]
-      debugger
       return { ...state, zones: zones }
     case DELETE_ZONE:
       zones = state.zones.filter((_, index) => action.index !== index)

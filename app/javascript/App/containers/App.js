@@ -6,16 +6,9 @@ import Header from '../components/Header'
 import Settings from '../components/Settings'
 import getCalendarState from '../selectors/calendar'
 import * as ZoneActions from '../actions'
-import * as colors from 'material-ui/styles/colors'
-
-const style = {
-  app: {
-    background: colors.grey200
-  }
-}
 
 const App = ({zones, calendar, state,  actions}) => (
-  <div style={ style.app }>
+  <div>
     <Header
       actions={ actions }
       state={ state }

@@ -25,7 +25,7 @@ export default ({ actions, zones, calendar }) => {
               <ZoneAutoComplete
                 actions={ actions }
                 index={ i }
-                deletable={ i > 1 }
+                deletable={ i > 0 }
                 value={ zone } />
             </TableHeaderColumn>
           ))
@@ -33,7 +33,7 @@ export default ({ actions, zones, calendar }) => {
         <TableHeaderColumn>
           <ZoneAutoComplete
             actions={ actions }
-            deletable={ zones.length > 1 }
+            deletable={ false }
             value={ '' } />
         </TableHeaderColumn>
       </TableRow>

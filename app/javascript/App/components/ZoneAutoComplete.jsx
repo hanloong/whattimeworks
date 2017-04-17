@@ -5,6 +5,13 @@ import IconButton from 'material-ui/IconButton'
 import moment from 'moment-timezone'
 import { niceZone } from '../utils/formatter'
 
+const style = {
+  icon: {
+    height: '38px',
+    paddingTop: '0px'
+  }
+}
+
 class ZoneAutoComplete extends Component {
   constructor(props) {
     super(props)
@@ -39,6 +46,7 @@ class ZoneAutoComplete extends Component {
 
     if (deletable) {
       deleteButton = <IconButton
+        style={ style.icon }
         onTouchTap={ this.handleDelete }>
         <DeleteIcon />
       </IconButton>
