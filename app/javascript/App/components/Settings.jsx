@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
 import SettingsMatchesOnly from './Settings/MatchesOnly'
-import { List, ListItem } from 'material-ui/List'
+import SettingsValidTimes from './Settings/ValidTimes'
+import { List } from 'material-ui/List'
 import Subheader from 'material-ui/Subheader'
 
 export default ({ state, actions }) => (
   <List>
     <Subheader>Settings</Subheader>
-    <ListItem>
-      <SettingsMatchesOnly
-        toggled={ state.matchesOnly }
-        onToggle={ actions.toggleMatchesOnly } />
-    </ListItem>
+    <SettingsMatchesOnly
+      toggled={ state.matchesOnly }
+      onToggle={ actions.toggleMatchesOnly } />
+    <SettingsValidTimes
+      onStartTimeChange={ actions.updateStartTime }
+      onEndTimeChange={ actions.updateStartTime }
+      startTime={ state.startTime }
+      endTime={ state.endTime } />
   </List>
 )

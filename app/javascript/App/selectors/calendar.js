@@ -3,13 +3,14 @@ import moment from 'moment-timezone'
 const getCalendarState = (state) => {
   let { zones, step, date } = state
   let steps = (24 * 60) / step
+  let defaultZone = zones[0]
 
   return [...Array(steps).keys()].map(i =>
     zones.map(zone => {
-      let time = date.clone().add((i * step), 'm').tz(zone)
+      let time = date.clone().tz(zone).add((i * step), 'm')
       return {
         zone: zone,
-        time: time.calendar(date),
+        time: time.format("ddd, h:mm A"),
         valid: isValidTime(state, time)
       }
     })
@@ -23,11 +24,17 @@ const getCalendarState = (state) => {
 
 const isValidTime = (state, time) => {
   let { validDays, startTime, endTime } = state
-  let minutes = (time.hour() * 60) + time.minute()
+  let minutes = dateToMinutes(time.toDate())
+  let startMinutes = dateToMinutes(startTime)
+  let endMinutes = dateToMinutes(endTime)
 
   return validDays.includes(time.isoWeekday())
-    && minutes >= startTime
-    && minutes < endTime
+    && minutes >= startMinutes
+    && minutes < endMinutes
+}
+
+const dateToMinutes = (date) => {
+  return (date.getHours() * 60) + date.getMinutes()
 }
 
 module.exports = getCalendarState

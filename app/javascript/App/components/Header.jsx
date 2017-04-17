@@ -33,7 +33,7 @@ class Header extends Component {
     })
   }
 
-  handleChange(_, date) {
+  handleChange(nullEvent, date) {
     let { actions } = this.props
     actions.updateDate(date)
   }
@@ -42,11 +42,11 @@ class Header extends Component {
     const { date, state, actions } = this.props
 
     let datePicker = <DatePicker
+      defaultDate={ date.toDate() }
+      formatDate={ this.formatDate }
       id="date-picker"
       inputStyle={ style.textField }
-      formatDate={ this.formatDate }
-      onChange={ this.handleChange }
-      defaultDate={ date.toDate() } />
+      onChange={ this.handleChange } />
 
     return <div>
       <AppBar
@@ -54,12 +54,12 @@ class Header extends Component {
         title={ datePicker } />
       <Drawer
         docked={ false }
-        width={ 200 }
         onRequestChange={ this.toggleDraw }
-        open={ this.state.drawOpen }>
+        open={ this.state.drawOpen }
+        width={ 300 } >
         <Settings
-          state={ state }
-          actions={ actions } />
+          actions={ actions }
+          state={ state } />
       </Drawer>
     </div>
   }
