@@ -46,13 +46,14 @@ class ZoneAutoComplete extends Component {
 
     return <div>
       <AutoComplete
-        id={ `zone-auto-${index}` }
-        hintText="Type a timezone"
         dataSource={ this.zones() }
-        fullWidth={ true }
         filter={ AutoComplete.fuzzyFilter }
-        searchText={ niceZone(this.props.value) }
-        onNewRequest={ this.handleUpdate } />
+        fullWidth={ true }
+        hintText="Type a timezone"
+        id={ `zone-auto-${index}` }
+        onNewRequest={ this.handleUpdate } 
+        openOnFocus={ true }
+        searchText={ niceZone(this.props.value) }/>
       { deleteButton }
     </div>
   }
