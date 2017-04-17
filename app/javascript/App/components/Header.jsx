@@ -42,7 +42,7 @@ class Header extends Component {
     const { date, state, actions } = this.props
 
     let datePicker = <DatePicker
-      defaultDate={ date.toDate() }
+      defaultDate={ moment(date).toDate() }
       formatDate={ this.formatDate }
       id="date-picker"
       inputStyle={ style.textField }

@@ -7,7 +7,7 @@ const getCalendarState = (state) => {
 
   return [...Array(steps).keys()].map(i =>
     zones.map(zone => {
-      let startTime = date.clone().tz(zone).add((i * step), 'm')
+      let startTime = moment(date).clone().tz(zone).add((i * step), 'm')
       let endTime = startTime.clone().add(state.length, 'm')
       return {
         zone: zone,

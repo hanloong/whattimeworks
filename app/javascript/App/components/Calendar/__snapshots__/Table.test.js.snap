@@ -113,7 +113,7 @@ exports[`Print out a table 1`] = `
                       }
                     }
                   >
-                    Type a timezone
+                    Type a time zone e.g. (London)
                   </div>
                   <input
                     autoComplete="off"
@@ -256,7 +256,7 @@ exports[`Print out a table 1`] = `
                       }
                     }
                   >
-                    Type a timezone
+                    Type a time zone e.g. (London)
                   </div>
                   <input
                     autoComplete="off"

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import moment from 'moment-timezone'
 import TimePicker from 'material-ui/TimePicker'
 import Subheader from 'material-ui/Subheader'
 import ListItem from '../ListItem'
@@ -35,7 +36,7 @@ class SettingsValidTimes extends Component {
     return <ListItem>
       <Subheader style={ style.subheader }>{ title }</Subheader>
       <TimePicker
-        defaultTime={ value }
+        defaultTime={ moment(value).toDate() }
         id="startTime"
         onChange={ this.handleTimeChange }
         style={ style.time }

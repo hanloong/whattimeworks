@@ -57,7 +57,7 @@ class ZoneAutoComplete extends Component {
         dataSource={ this.zones() }
         filter={ AutoComplete.fuzzyFilter }
         fullWidth={ true }
-        hintText="Type a timezone"
+        hintText="Type a time zone e.g. (London)"
         id={ `zone-auto-${index}` }
         onNewRequest={ this.handleUpdate } 
         openOnFocus={ true }
