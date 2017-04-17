@@ -7,7 +7,7 @@ import Subheader from 'material-ui/Subheader'
 
 export default ({ state, actions }) => (
   <List>
-    <Subheader>Settings</Subheader>
+    <Subheader><h2>Settings</h2></Subheader>
     <SettingsMatchesOnly
       toggled={ state.matchesOnly }
       onToggle={ actions.toggleMatchesOnly } />

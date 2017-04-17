@@ -1,7 +1,22 @@
 import React, { Component } from 'react'
 import TimePicker from 'material-ui/TimePicker'
 import Subheader from 'material-ui/Subheader'
-import { ListItem } from 'material-ui/List'
+import ListItem from '../ListItem'
+
+const style = {
+  subheader: {
+    float: 'left',
+    paddingLeft: '0',
+    width: '40%'
+  },
+  time: {
+    float: 'left',
+    width: '60%'
+  },
+  input: {
+    width: '160px'
+  }
+}
 
 class SettingsValidTimes extends Component {
   constructor(props) {
@@ -17,15 +32,15 @@ class SettingsValidTimes extends Component {
   render() {
     let { title, time } = this.props
 
-    return <div>
-      <Subheader>{ title }</Subheader>
-      <ListItem disabled={ true }>
-        <TimePicker
-          defaultTime={ time }
-          id="startTime"
-          onChange={ this.handleTimeChange } />
-      </ListItem>
-    </div>
+    return <ListItem>
+      <Subheader style={ style.subheader }>{ title }</Subheader>
+      <TimePicker
+        defaultTime={ time }
+        id="startTime"
+        style={ style.time }
+        textFieldStyle={ style.input }
+        onChange={ this.handleTimeChange } />
+    </ListItem>
   }
 }
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import SelectField from 'material-ui/SelectField'
 import MenuItem from 'material-ui/MenuItem'
 import Subheader from 'material-ui/Subheader'
-import { ListItem } from 'material-ui/List'
+import ListItem from '../ListItem'
 
 const days = [
   { value: 1, text: 'Monday' },
@@ -35,16 +35,17 @@ class ValidDays extends Component {
         primaryText={ day.text }/>
     ))
 
-    return <ListItem disabled={ true }>
-      <Subheader>Valid days</Subheader>
-      <SelectField
-        hintText='Select days'
-        multiple={ true }
-        onChange={ this.handleChange }
-        value={ values }>
-        { menuItems }
-      </SelectField>
-    </ListItem>
+    return <div>
+      <ListItem>
+        <SelectField
+          hintText='Select days'
+          multiple={ true }
+          onChange={ this.handleChange }
+          value={ values }>
+          { menuItems }
+        </SelectField>
+      </ListItem>
+    </div>
   }
 }
 
