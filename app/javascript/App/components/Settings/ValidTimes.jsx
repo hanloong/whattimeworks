@@ -25,21 +25,21 @@ class SettingsValidTimes extends Component {
     this.handleTimeChange = this.handleTimeChange.bind(this)
   }
 
-  handleTimeChange(nullEvent, time) {
-    this.props.onTimeChange(time)
+  handleTimeChange(nullEvent, value) {
+    this.props.onChange(value)
   }
 
   render() {
-    let { title, time } = this.props
+    let { title, value } = this.props
 
     return <ListItem>
       <Subheader style={ style.subheader }>{ title }</Subheader>
       <TimePicker
-        defaultTime={ time }
+        defaultTime={ value }
         id="startTime"
+        onChange={ this.handleTimeChange }
         style={ style.time }
-        textFieldStyle={ style.input }
-        onChange={ this.handleTimeChange } />
+        textFieldStyle={ style.input } />
     </ListItem>
   }
 }

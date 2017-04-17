@@ -11,10 +11,14 @@ const style = {
 }
 
 const Cell = ({ valid, time }) => {
+  let days
+  if (time.days !== 0) {
+    days = time.days > 0 ? `(+${time.days})` : `(-${time.days})`
+  }
   return <TableRowColumn
     key={ time.zone }
     style={ valid ? style.valid : style.invalid }>
-    { time.time }
+    { time.startTime } - { time.endTime } { days }
   </TableRowColumn>
 }
 

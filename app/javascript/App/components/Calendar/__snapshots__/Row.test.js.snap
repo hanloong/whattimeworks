@@ -32,6 +32,9 @@ exports[`Print out a table row 1`] = `
     }
   >
     Mon, 12:00 AM
+     - 
+    12:30 AM
+     
   </td>
   <td
     className={undefined}

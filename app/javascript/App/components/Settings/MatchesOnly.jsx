@@ -10,16 +10,16 @@ export default class SettingsMatchesOnly extends Component {
   }
 
   handleToggle() {
-    this.props.onToggle()
+    this.props.onChange()
   }
 
   render() {
-    let { toggled } = this.props
+    let { value } = this.props
 
     return <ListItem>
       <Toggle
         label="Matches only"
-        toggled={ toggled }
+        toggled={ value }
         onToggle={ this.handleToggle }/>
     </ListItem>
   }

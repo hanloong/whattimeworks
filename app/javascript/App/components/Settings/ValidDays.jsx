@@ -21,18 +21,18 @@ class ValidDays extends Component {
     this.handleChange = this.handleChange.bind(this)
   }
 
-  handleChange(nullEvent, index, values) {
-    this.props.onUpdate(values)
+  handleChange(nullEvent, index, value) {
+    this.props.onChange(value)
   }
 
   render() {
-    let { values } = this.props
+    let { value } = this.props
     let menuItems = days.map(day => (
       <MenuItem
-        checked={ values.includes(day.value) }
+        checked={ value.includes(day.value) }
         key={ day.value }
-        value={ day.value }
-        primaryText={ day.text }/>
+        primaryText={ day.text }
+        value={ day.value }/>
     ))
 
     return <div>
@@ -41,7 +41,7 @@ class ValidDays extends Component {
           hintText='Select days'
           multiple={ true }
           onChange={ this.handleChange }
-          value={ values }>
+          value={ value }>
           { menuItems }
         </SelectField>
       </ListItem>
