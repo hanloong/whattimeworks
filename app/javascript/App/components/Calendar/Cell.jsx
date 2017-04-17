@@ -4,10 +4,11 @@ import * as colors from 'material-ui/styles/colors'
 
 const style = {
   valid: {
-    background: colors.green500,
-    color: 'white'
+    backgroundColor: colors.cyan50
   },
-  invalid: {}
+  invalid: {
+    backgroundColor: colors.pink50
+  }
 }
 
 const Cell = ({ valid, time }) => {
@@ -15,9 +16,10 @@ const Cell = ({ valid, time }) => {
   if (time.days !== 0) {
     days = time.days > 0 ? `(+${time.days})` : `(-${time.days})`
   }
+
   return <TableRowColumn
     key={ time.zone }
-    style={ valid ? style.valid : style.invalid }>
+    style={ time.valid ? style.valid : style.invalid }>
     { time.startTime } - { time.endTime } { days }
   </TableRowColumn>
 }

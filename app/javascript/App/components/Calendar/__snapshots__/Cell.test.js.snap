@@ -8,6 +8,7 @@ exports[`Print out a table cell 1`] = `
   onMouseLeave={[Function]}
   style={
     Object {
+      "backgroundColor": "#fce4ec",
       "fontSize": 13,
       "height": 48,
       "muiPrepared": true,
