@@ -22,14 +22,14 @@ class SettingsValidTimes extends Component {
   render() {
     return <div>
       <Subheader>Day starts at</Subheader>
-      <ListItem>
+      <ListItem disabled={ true }>
         <TimePicker
           defaultTime={ this.props.startTime }
           id="startTime"
           onChange={ this.handleStartTimeChange } />
       </ListItem>
       <Subheader>Day ends at</Subheader>
-      <ListItem>
+      <ListItem disabled={ true }>
         <TimePicker
           defaultTime={ this.props.endTime }
           id="endTime"

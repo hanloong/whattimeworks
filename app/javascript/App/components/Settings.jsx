@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import SettingsMatchesOnly from './Settings/MatchesOnly'
 import SettingsValidTimes from './Settings/ValidTimes'
+import SettingsValidDays from './Settings/ValidDays'
 import { List } from 'material-ui/List'
 import Subheader from 'material-ui/Subheader'
 
@@ -15,5 +16,8 @@ export default ({ state, actions }) => (
       onEndTimeChange={ actions.updateStartTime }
       startTime={ state.startTime }
       endTime={ state.endTime } />
+    <SettingsValidDays
+      onUpdate={ actions.updateDays }
+      values={ state.validDays } />
   </List>
 )
