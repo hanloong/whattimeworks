@@ -11,9 +11,12 @@ export default ({ state, actions }) => (
       toggled={ state.matchesOnly }
       onToggle={ actions.toggleMatchesOnly } />
     <SettingsValidTimes
-      onStartTimeChange={ actions.updateStartTime }
-      onEndTimeChange={ actions.updateStartTime }
-      startTime={ state.startTime }
-      endTime={ state.endTime } />
+      onTimeChange={ actions.updateStartTime }
+      time={ state.startTime }
+      title='Start of day' />
+    <SettingsValidTimes
+      onTimeChange={ actions.updateEndTime }
+      time={ state.endTime }
+      title='End of day' />
   </List>
 )
