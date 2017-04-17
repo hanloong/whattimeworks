@@ -20,6 +20,8 @@ exports[`Print out a table cell 1`] = `
     }
   }
 >
-  Today, 3pm
+   - 
+   
+  (-undefined)
 </td>
 `;

@@ -9,9 +9,11 @@ test('converts the state to calendar friedly format', () => {
   expect(calendar.length).toEqual(48)
   expect(calendar[0]).toEqual({
     times: [{
-      time: "Mon, 12:00 AM",
+      startTime: 'Mon, 12:00 AM',
+      endTime: '12:30 AM',
+      days: 0,
       valid: false,
-      zone: "Australia/Sydney"
+      zone: 'Australia/Sydney'
     }],
     valid: false
   })
