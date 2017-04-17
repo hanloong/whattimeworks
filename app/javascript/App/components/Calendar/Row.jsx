@@ -2,22 +2,14 @@ import React from 'react'
 import Cell from './Cell'
 import { TableRow, TableRowColumn } from 'material-ui/Table';
 
-const style = {
-  valid: {
-    background: 'green',
-    color: 'white'
-  },
-  invalid: {}
-}
-
 const Row = ({ row }) => {
-  return <TableRow
-    style={ row.valid ? style.valid : style.invalid }>
+  return <TableRow>
     {
-      row.times.map((row, i) =>
+      row.times.map((time, i) =>
         <Cell
+          valid={ row.valid }
           key={ i }
-          time={ row } />
+          time={ time } />
       )
     }
     <TableRowColumn/>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { ListItem } from 'material-ui/List'
 import Toggle from 'material-ui/Toggle'
 
 export default class SettingsMatchesOnly extends Component {
@@ -15,9 +16,11 @@ export default class SettingsMatchesOnly extends Component {
   render() {
     let { toggled } = this.props
 
-    return <Toggle
-      label="Matches only"
-      toggled={ toggled }
-      onToggle={ this.handleToggle }/>
+    return <ListItem>
+      <Toggle
+        label="Matches only"
+        toggled={ toggled }
+        onToggle={ this.handleToggle }/>
+    </ListItem>
   }
 }

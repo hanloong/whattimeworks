@@ -402,7 +402,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 12:00 AM
+            Mon, 12:00 AM
           </td>
           <td
             className={undefined}
@@ -455,7 +455,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 12:30 AM
+            Mon, 12:30 AM
           </td>
           <td
             className={undefined}
@@ -508,7 +508,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 1:00 AM
+            Mon, 1:00 AM
           </td>
           <td
             className={undefined}
@@ -561,7 +561,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 1:30 AM
+            Mon, 1:30 AM
           </td>
           <td
             className={undefined}
@@ -614,7 +614,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 2:00 AM
+            Mon, 2:00 AM
           </td>
           <td
             className={undefined}
@@ -667,7 +667,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 2:30 AM
+            Mon, 2:30 AM
           </td>
           <td
             className={undefined}
@@ -720,7 +720,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 3:00 AM
+            Mon, 3:00 AM
           </td>
           <td
             className={undefined}
@@ -773,7 +773,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 3:30 AM
+            Mon, 3:30 AM
           </td>
           <td
             className={undefined}
@@ -826,7 +826,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 4:00 AM
+            Mon, 4:00 AM
           </td>
           <td
             className={undefined}
@@ -879,7 +879,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 4:30 AM
+            Mon, 4:30 AM
           </td>
           <td
             className={undefined}
@@ -932,7 +932,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 5:00 AM
+            Mon, 5:00 AM
           </td>
           <td
             className={undefined}
@@ -985,7 +985,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 5:30 AM
+            Mon, 5:30 AM
           </td>
           <td
             className={undefined}
@@ -1038,7 +1038,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 6:00 AM
+            Mon, 6:00 AM
           </td>
           <td
             className={undefined}
@@ -1091,7 +1091,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 6:30 AM
+            Mon, 6:30 AM
           </td>
           <td
             className={undefined}
@@ -1144,7 +1144,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 7:00 AM
+            Mon, 7:00 AM
           </td>
           <td
             className={undefined}
@@ -1197,7 +1197,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 7:30 AM
+            Mon, 7:30 AM
           </td>
           <td
             className={undefined}
@@ -1250,7 +1250,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 8:00 AM
+            Mon, 8:00 AM
           </td>
           <td
             className={undefined}
@@ -1303,7 +1303,887 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 8:30 AM
+            Mon, 8:30 AM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 9:00 AM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 9:30 AM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 10:00 AM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 10:30 AM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 11:00 AM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 11:30 AM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 12:00 PM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 12:30 PM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 1:00 PM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 1:30 PM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 2:00 PM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 2:30 PM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 3:00 PM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 3:30 PM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 4:00 PM
+          </td>
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "backgroundColor": "inherit",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          />
+        </tr>
+        <tr
+          className={undefined}
+          style={
+            Object {
+              "borderBottom": "1px solid #e0e0e0",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "height": 48,
+              "muiPrepared": true,
+            }
+          }
+        >
+          <td
+            className={undefined}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "#4caf50",
+                "color": "white",
+                "fontSize": 13,
+                "height": 48,
+                "muiPrepared": true,
+                "overflow": "hidden",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "textAlign": "left",
+                "textOverflow": "ellipsis",
+                "whiteSpace": "nowrap",
+              }
+            }
+          >
+            Mon, 4:30 PM
           </td>
           <td
             className={undefined}
@@ -1356,7 +2236,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 9:00 AM
+            Mon, 5:00 PM
           </td>
           <td
             className={undefined}
@@ -1409,7 +2289,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 9:30 AM
+            Mon, 5:30 PM
           </td>
           <td
             className={undefined}
@@ -1462,7 +2342,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 10:00 AM
+            Mon, 6:00 PM
           </td>
           <td
             className={undefined}
@@ -1515,7 +2395,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 10:30 AM
+            Mon, 6:30 PM
           </td>
           <td
             className={undefined}
@@ -1568,7 +2448,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 11:00 AM
+            Mon, 7:00 PM
           </td>
           <td
             className={undefined}
@@ -1621,7 +2501,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 11:30 AM
+            Mon, 7:30 PM
           </td>
           <td
             className={undefined}
@@ -1674,7 +2554,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 12:00 PM
+            Mon, 8:00 PM
           </td>
           <td
             className={undefined}
@@ -1727,7 +2607,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 12:30 PM
+            Mon, 8:30 PM
           </td>
           <td
             className={undefined}
@@ -1780,7 +2660,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 1:00 PM
+            Mon, 9:00 PM
           </td>
           <td
             className={undefined}
@@ -1833,7 +2713,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 1:30 PM
+            Mon, 9:30 PM
           </td>
           <td
             className={undefined}
@@ -1886,7 +2766,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 2:00 PM
+            Mon, 10:00 PM
           </td>
           <td
             className={undefined}
@@ -1939,7 +2819,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 2:30 PM
+            Mon, 10:30 PM
           </td>
           <td
             className={undefined}
@@ -1992,7 +2872,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 3:00 PM
+            Mon, 11:00 PM
           </td>
           <td
             className={undefined}
@@ -2045,855 +2925,7 @@ exports[`Print out a table 1`] = `
               }
             }
           >
-            Today at 3:30 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 4:00 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 4:30 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 5:00 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 5:30 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 6:00 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 6:30 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 7:00 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 7:30 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 8:00 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 8:30 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 9:00 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 9:30 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 10:00 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 10:30 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 11:00 PM
-          </td>
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "backgroundColor": "inherit",
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          />
-        </tr>
-        <tr
-          className={undefined}
-          style={
-            Object {
-              "borderBottom": "1px solid #e0e0e0",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "height": 48,
-              "muiPrepared": true,
-            }
-          }
-        >
-          <td
-            className={undefined}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "fontSize": 13,
-                "height": 48,
-                "muiPrepared": true,
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "textAlign": "left",
-                "textOverflow": "ellipsis",
-                "whiteSpace": "nowrap",
-              }
-            }
-          >
-            Today at 11:30 PM
+            Mon, 11:30 PM
           </td>
           <td
             className={undefined}
