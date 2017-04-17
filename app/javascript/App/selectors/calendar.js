@@ -24,9 +24,9 @@ const getCalendarState = (state) => {
 
 const isValidTime = (state, time) => {
   let { validDays, startTime, endTime } = state
-  let minutes = dateToMinutes(time.toDate())
-  let startMinutes = dateToMinutes(startTime)
-  let endMinutes = dateToMinutes(endTime)
+  let minutes = dateToMinutes(time)
+  let startMinutes = dateToMinutes(moment(startTime))
+  let endMinutes = dateToMinutes(moment(endTime))
 
   return validDays.includes(time.isoWeekday())
     && minutes >= startMinutes
@@ -34,7 +34,7 @@ const isValidTime = (state, time) => {
 }
 
 const dateToMinutes = (date) => {
-  return (date.getHours() * 60) + date.getMinutes()
+  return (date.hours() * 60) + date.minutes()
 }
 
 module.exports = getCalendarState
