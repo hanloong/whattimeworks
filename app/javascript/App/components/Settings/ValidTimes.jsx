@@ -19,7 +19,7 @@ class SettingsValidTimes extends Component {
 
     return <div>
       <Subheader>{ title }</Subheader>
-      <ListItem>
+      <ListItem disabled={ true }>
         <TimePicker
           defaultTime={ time }
           id="startTime"

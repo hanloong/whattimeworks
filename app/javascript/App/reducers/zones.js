@@ -4,6 +4,7 @@ import {
   TOGGLE_MATCHES_ONLY,
   UPDATE_DATE,
   UPDATE_END_TIME,
+  UPDATE_DAYS,
   UPDATE_START_TIME,
   UPDATE_ZONE
 } from '../constants/ActionTypes'
@@ -28,6 +29,8 @@ export default (state = initialState, action) => {
       return { ...state, date: date }
     case UPDATE_END_TIME:
       return { ...state, endTime: action.time }
+    case UPDATE_DAYS:
+      return { ...state, validDays: action.days }
     case UPDATE_START_TIME:
       return { ...state, startTime: action.time }
     case UPDATE_ZONE:

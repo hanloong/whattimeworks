@@ -16,7 +16,7 @@ export default class SettingsMatchesOnly extends Component {
   render() {
     let { toggled } = this.props
 
-    return <ListItem>
+    return <ListItem disabled={ true }>
       <Toggle
         label="Matches only"
         toggled={ toggled }
