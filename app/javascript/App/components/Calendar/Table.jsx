@@ -1,24 +1,12 @@
 import React from 'react'
 import Row from './Row'
 import ZoneAutoComplete from '../ZoneAutoComplete'
-import {
-  Table,
-  TableBody,
-  TableHeader,
-  TableHeaderColumn,
-  TableRow
-} from 'material-ui/Table'
-
-const style = {
-  table: {}
-}
+import { TableHeaderColumn } from 'material-ui/Table'
 
 export default ({ actions, zones, calendar }) => {
-  return <Table
-    style={ style.table }
-    selectable={ false }>
-    <TableHeader adjustForCheckbox={ false } displaySelectAll={ false }>
-      <TableRow>
+  return <table>
+    <thead>
+      <tr>
         {
           zones.map((zone, i) => (
             <TableHeaderColumn key={ zone }>
@@ -30,20 +18,20 @@ export default ({ actions, zones, calendar }) => {
             </TableHeaderColumn>
           ))
         }
-        <TableHeaderColumn>
+        <th>
           <ZoneAutoComplete
             actions={ actions }
             deletable={ false }
             value={ '' } />
-        </TableHeaderColumn>
-      </TableRow>
-    </TableHeader>
-    <TableBody>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
       {
         calendar.map((row, i) => (
           <Row key={ i } row={ row } />
         ))
       }
-    </TableBody>
-  </Table>
+    </tbody>
+  </table>
 }

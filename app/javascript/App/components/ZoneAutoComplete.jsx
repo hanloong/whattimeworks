@@ -9,6 +9,9 @@ const style = {
   icon: {
     height: '38px',
     paddingTop: '0px'
+  },
+  wrapper: {
+    padding: '0 16px'
   }
 }
 
@@ -52,12 +55,12 @@ class ZoneAutoComplete extends Component {
       </IconButton>
     }
 
-    return <div>
+    return <div style={ style.wrapper }>
       <AutoComplete
         dataSource={ this.zones() }
         filter={ AutoComplete.fuzzyFilter }
         fullWidth={ true }
-        hintText="Type a time zone e.g. (London)"
+        hintText="Time zone e.g. (London)"
         id={ `zone-auto-${index}` }
         onNewRequest={ this.handleUpdate } 
         openOnFocus={ true }

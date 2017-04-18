@@ -1,36 +1,57 @@
 import moment from 'moment-timezone'
 
 const getCalendarState = (state) => {
-  let { zones, step, date } = state
-  let steps = Math.floor((24 * 60) / step)
-  let defaultZone = zones[0]
+  const { zones, step, date } = state
+  const steps = Math.floor((24 * 60) / step)
+  const offset = (step * 2)
+  const defaultZone = zones[0]
 
   return [...Array(steps).keys()].map(i =>
     zones.map(zone => {
-      let startTime = moment(date).clone().tz(zone).add((i * step), 'm')
-      let endTime = startTime.clone().add(state.length, 'm')
+      const start = moment(date).clone().tz(zone).add((i * step), 'm')
+      const end = start.clone().add(state.length, 'm')
       return {
         zone: zone,
-        startTime: startTime.format("ddd, h:mm A"),
-        endTime: endTime.format("h:mm A"),
-        days: endTime.dayOfYear() - startTime.dayOfYear(),
-        valid: isValidTime(state, startTime) && isValidTime(state, endTime)
+        startTime: start.format("ddd, h:mm A"),
+        endTime: end.format("h:mm A"),
+        days: end.dayOfYear() - start.dayOfYear(),
+        status: timeStatus(state, start, end, offset)
       }
     })
   ).map(times => (
     {
       times: times,
-      valid: times.every(time => time.valid)
+      valid: times.every(time => time.status === 'VALID')
     }
   )).filter(times => state.matchesOnly ? times.valid : true)
 }
 
-const isValidTime = (state, time) => {
+const timeStatus = (state, start, end, offset) => {
+  if (validTime(state, start, end)) {
+    return 'VALID'
+  } else if (almostTime(state, start, end, offset)) {
+    return 'ALMOST'
+  } else {
+    return 'INVALID'
+  }
+}
+
+const validTime = (state, start, end) => {
+  return timeWithin(state, start)
+    && timeWithin(state, end)
+}
+
+const almostTime = (state, start, end, offset) => {
+  return timeWithin(state, start, offset)
+    && timeWithin(state, end, 0, offset)
+}
+
+const timeWithin = (state, time, startOffset = 0, endOffset = 0) => {
   let { validDays, startTime, endTime } = state
 
   return validDays.includes(time.isoWeekday())
-    && dateToMinutes(time) >= dateToMinutes(startTime)
-    && dateToMinutes(time) <= dateToMinutes(endTime)
+    && dateToMinutes(time) >= (dateToMinutes(startTime) - startOffset)
+    && dateToMinutes(time) <= (dateToMinutes(endTime) + endOffset)
 }
 
 const dateToMinutes = (date) => {

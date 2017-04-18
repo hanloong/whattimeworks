@@ -1,17 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Print out a table row 1`] = `
-<tr
-  className={undefined}
-  style={
-    Object {
-      "borderBottom": "1px solid #e0e0e0",
-      "color": "rgba(0, 0, 0, 0.87)",
-      "height": 48,
-      "muiPrepared": true,
-    }
-  }
->
+<tr>
   <td
     className={undefined}
     onClick={[Function]}
@@ -19,7 +9,8 @@ exports[`Print out a table row 1`] = `
     onMouseLeave={[Function]}
     style={
       Object {
-        "backgroundColor": "#fce4ec",
+        "backgroundColor": "#fafafa",
+        "color": "#bdbdbd",
         "fontSize": 13,
         "height": 48,
         "muiPrepared": true,
@@ -32,10 +23,10 @@ exports[`Print out a table row 1`] = `
       }
     }
   >
-    Mon, 12:00 AM
+    Tue, 12:00 AM
      - 
     12:30 AM
-     
+    
   </td>
   <td
     className={undefined}
@@ -44,7 +35,6 @@ exports[`Print out a table row 1`] = `
     onMouseLeave={[Function]}
     style={
       Object {
-        "backgroundColor": "inherit",
         "fontSize": 13,
         "height": 48,
         "muiPrepared": true,
