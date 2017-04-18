@@ -4,7 +4,8 @@ import Paper from 'material-ui/Paper'
 
 const style = {
   paper: {
-    margin: '1em'
+    margin: '1em',
+    overflowX: 'auto'
   }
 }
 

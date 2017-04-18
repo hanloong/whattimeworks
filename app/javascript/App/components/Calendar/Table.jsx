@@ -3,13 +3,19 @@ import Row from './Row'
 import ZoneAutoComplete from '../ZoneAutoComplete'
 import { TableHeaderColumn } from 'material-ui/Table'
 
+const style = {
+  th: {
+    minWidth: '250px'
+  }
+}
+
 export default ({ actions, zones, calendar }) => {
   return <table>
     <thead>
       <tr>
         {
           zones.map((zone, i) => (
-            <TableHeaderColumn key={ zone }>
+            <TableHeaderColumn key={ i }>
               <ZoneAutoComplete
                 actions={ actions }
                 index={ i }
@@ -18,7 +24,9 @@ export default ({ actions, zones, calendar }) => {
             </TableHeaderColumn>
           ))
         }
-        <th>
+        <th
+          style={ style.th }
+          key='new-zone' >
           <ZoneAutoComplete
             actions={ actions }
             deletable={ false }
