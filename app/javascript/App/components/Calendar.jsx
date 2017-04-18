@@ -4,16 +4,21 @@ import Paper from 'material-ui/Paper'
 
 const style = {
   paper: {
-    margin: '1em',
+    display: 'inline-block',
+    margin: '1em'
+  },
+  wrapper: {
     overflowX: 'auto'
   }
 }
 
 export default ({ actions, calendar, zones }) => (
-  <Paper style={ style.paper }>
-    <Table
-      actions={ actions }
-      zones={ zones }
-      calendar={ calendar } />
-  </Paper>
+  <div style={ style.wrapper }>
+    <Paper style={ style.paper }>
+      <Table
+        actions={ actions }
+        zones={ zones }
+        calendar={ calendar } />
+    </Paper>
+  </div>
 )
