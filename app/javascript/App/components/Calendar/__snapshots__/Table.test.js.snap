@@ -152,7 +152,13 @@ exports[`Print out a table 1`] = `
           </div>
         </div>
       </th>
-      <th>
+      <th
+        style={
+          Object {
+            "minWidth": "250px",
+          }
+        }
+      >
         <div
           style={
             Object {
