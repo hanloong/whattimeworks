@@ -6,12 +6,15 @@ import { TableHeaderColumn } from "material-ui/Table";
 const style = {
   th: {
     minWidth: "250px"
+  },
+  table: {
+    fontFamily: "Roboto, sans-serif"
   }
 };
 
 export default ({ actions, zones, calendar }) => {
   return (
-    <table>
+    <table style={style.table}>
       <thead>
         <tr>
           {zones.map((zone, i) => (
