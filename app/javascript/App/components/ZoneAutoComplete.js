@@ -3,6 +3,8 @@ import AutoComplete from "material-ui/AutoComplete";
 import DeleteIcon from "material-ui/svg-icons/action/delete";
 import IconButton from "material-ui/IconButton";
 import FlatButton from "material-ui/FlatButton";
+import TextField from "material-ui/TextField";
+import { List, ListItem } from "material-ui/List";
 import Dialog from "material-ui/Dialog";
 import moment from "moment-timezone";
 import { niceZone } from "../utils/formatter";
@@ -28,13 +30,14 @@ class ZoneAutoComplete extends Component {
     this.handleClose = this.handleClose.bind(this);
   }
 
-  handleUpdate(event) {
+  handleUpdate(event, newValue) {
     let { value, actions, index } = this.props;
-    if (value === "") {
-      actions.addZone(event.value);
+    if (value) {
+      actions.updateZone(newValue, index);
     } else {
-      actions.updateZone(event.value, index);
+      actions.addZone(newValue);
     }
+    this.handleClose();
   }
 
   handleDelete() {
@@ -54,18 +57,21 @@ class ZoneAutoComplete extends Component {
     });
   }
 
-  zones() {
+  zonesList() {
     return moment.tz
       .names()
-      .map(zone => ({ value: zone, text: niceZone(zone) }));
+      .map((zone, i) => (
+        <ListItem
+          key={i}
+          onClick={e => this.handleUpdate(e, zone)}
+          primaryText={niceZone(zone)}
+        />
+      ));
   }
 
-  render() {
-    const { zone, deletable, index } = this.props;
-    let deleteButton, radios;
-
-    if (deletable) {
-      deleteButton = (
+  deleteButton() {
+    if (this.props.deletable) {
+      return (
         <FlatButton
           onTouchTap={this.handleDelete}
           style={style.iconButton}
@@ -73,6 +79,12 @@ class ZoneAutoComplete extends Component {
         />
       );
     }
+  }
+
+  render() {
+    const { value, zone, index } = this.props;
+    let deleteButton, radios;
+    const zoneLabel = value ? niceZone(this.props.value) : "Add timezone";
 
     const actions = [
       <FlatButton label="Cancel" primary={true} onTouchTap={this.handleClose} />
@@ -80,19 +92,20 @@ class ZoneAutoComplete extends Component {
 
     return (
       <div>
-        <FlatButton
-          onTouchTap={this.handleOpen}
-          label={niceZone(this.props.value)}
-        />
-        {deleteButton}
+        <FlatButton onTouchTap={this.handleOpen} label={zoneLabel} />
+        {this.deleteButton()}
         <Dialog
-          title="Scrollable Dialog"
           actions={actions}
-          modal={false}
-          open={this.state.open}
-          onRequestClose={this.handleClose}
           autoScrollBodyContent={true}
-        />
+          onRequestClose={this.handleClose}
+          open={this.state.open}
+          modal={false}
+          title="Select timezone from list"
+        >
+          <List>
+            {this.zonesList()}
+          </List>
+        </Dialog>
       </div>
     );
   }
