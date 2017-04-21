@@ -80,7 +80,9 @@ class ZoneAutoComplete extends Component {
 
   zonesList() {
     return this.props.zones
-      .filter(zone => zone.text.match(this.state.filter) !== null)
+      .filter(
+        zone => zone.text.match(new RegExp(this.state.filter, "i")) !== null
+      )
       .map(zone => (
         <TableRow
           key={zone.id}
