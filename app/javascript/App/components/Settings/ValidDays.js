@@ -53,4 +53,4 @@ class ValidDays extends Component {
   }
 }
 
-module.exports = ValidDays;
+export default ValidDays;

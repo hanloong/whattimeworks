@@ -48,4 +48,4 @@ class SettingsValidTimes extends Component {
   }
 }
 
-module.exports = SettingsValidTimes;
+export default SettingsValidTimes;

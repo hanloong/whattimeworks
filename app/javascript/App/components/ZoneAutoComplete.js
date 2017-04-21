@@ -73,4 +73,4 @@ class ZoneAutoComplete extends Component {
   }
 }
 
-module.exports = ZoneAutoComplete;
+export default ZoneAutoComplete;

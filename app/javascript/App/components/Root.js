@@ -8,10 +8,12 @@ import injectTapEventPlugin from "react-tap-event-plugin";
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
 
-export const Root = ({ store }) => (
+const Root = ({ store }) => (
   <MuiThemeProvider>
     <Provider store={store}>
       <App />
     </Provider>
   </MuiThemeProvider>
 );
+
+export default Root;

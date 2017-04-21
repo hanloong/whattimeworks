@@ -6,7 +6,7 @@ import SettingsMinutesSlider from "./Settings/MinutesSlider";
 import { List } from "material-ui/List";
 import Subheader from "material-ui/Subheader";
 
-export default ({ state, actions }) => (
+const Settings = ({ state, actions }) => (
   <List>
     <Subheader><h2>Settings</h2></Subheader>
     <SettingsMatchesOnly
@@ -37,3 +37,5 @@ export default ({ state, actions }) => (
     />
   </List>
 );
+
+export default Settings;

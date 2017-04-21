@@ -14,4 +14,4 @@ const ListItem = ({ children }) => (
   </MUIListItem>
 );
 
-module.exports = ListItem;
+export default ListItem;

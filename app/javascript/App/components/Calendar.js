@@ -7,8 +7,10 @@ const style = {
   }
 };
 
-export default ({ actions, calendar, zones }) => (
+const Calendar = ({ actions, calendar, zones }) => (
   <div style={style.wrapper}>
     <Table actions={actions} zones={zones} calendar={calendar} />
   </div>
 );
+
+export default Calendar;

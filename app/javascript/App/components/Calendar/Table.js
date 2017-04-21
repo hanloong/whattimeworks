@@ -12,7 +12,7 @@ const style = {
   }
 };
 
-export default ({ actions, zones, calendar }) => {
+const Table = ({ actions, zones, calendar }) => {
   return (
     <table style={style.table}>
       <thead>
@@ -38,3 +38,5 @@ export default ({ actions, zones, calendar }) => {
     </table>
   );
 };
+
+export default Table;

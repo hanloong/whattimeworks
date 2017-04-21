@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ListItem from "../ListItem";
 import Toggle from "material-ui/Toggle";
 
-export default class SettingsMatchesOnly extends Component {
+class SettingsMatchesOnly extends Component {
   constructor(props) {
     super(props);
 
@@ -27,3 +27,5 @@ export default class SettingsMatchesOnly extends Component {
     );
   }
 }
+
+export default SettingsMatchesOnly;
