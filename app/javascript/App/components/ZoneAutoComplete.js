@@ -4,7 +4,6 @@ import DeleteIcon from "material-ui/svg-icons/action/delete";
 import IconButton from "material-ui/IconButton";
 import FlatButton from "material-ui/FlatButton";
 import TextField from "material-ui/TextField";
-import { List, ListItem } from "material-ui/List";
 import {
   Table,
   TableBody,
@@ -21,6 +20,12 @@ const style = {
   iconButton: {
     minWidth: "none",
     padding: "0 1em"
+  },
+  filterInput: {
+    width: "100%"
+  },
+  label: {
+    textAlign: "left"
   }
 };
 
@@ -29,13 +34,15 @@ class ZoneAutoComplete extends Component {
     super(props);
 
     this.state = {
-      open: false
+      open: false,
+      filter: ""
     };
 
     this.handleUpdate = this.handleUpdate.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
     this.handleOpen = this.handleOpen.bind(this);
     this.handleClose = this.handleClose.bind(this);
+    this.updateFilter = this.updateFilter.bind(this);
   }
 
   handleUpdate(event, newValue) {
@@ -46,6 +53,12 @@ class ZoneAutoComplete extends Component {
       actions.addZone(newValue);
     }
     this.handleClose();
+  }
+
+  updateFilter(event) {
+    this.setState({
+      filter: event.target.value
+    });
   }
 
   handleDelete() {
@@ -66,13 +79,24 @@ class ZoneAutoComplete extends Component {
   }
 
   zonesList() {
-    return moment.tz.names().map((zone, i) => (
-      <TableRow key={i} onTouchTap={e => this.handleUpdate(e, zone)}>
-        <TableRowColumn>
-          {niceZone(zone)}
-        </TableRowColumn>
-      </TableRow>
-    ));
+    return this.props.zones
+      .filter(zone => zone.text.match(this.state.filter) !== null)
+      .map(zone => (
+        <TableRow
+          key={zone.id}
+          onTouchTap={e => this.handleUpdate(e, zone.value)}
+        >
+          <TableRowColumn>
+            <FlatButton
+              label={zone.text}
+              primary={true}
+              style={style.label}
+              fullWidth
+              onTouchTap={e => this.handleUpdate(e, zone.value)}
+            />
+          </TableRowColumn>
+        </TableRow>
+      ));
   }
 
   deleteButton() {
@@ -109,6 +133,18 @@ class ZoneAutoComplete extends Component {
           title="Select timezone from list"
         >
           <Table>
+            <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
+              <TableRow>
+                <TableHeaderColumn>
+                  <TextField
+                    style={style.filterInput}
+                    value={this.state.filter}
+                    onChange={this.updateFilter}
+                    hintText="filter timezones"
+                  />
+                </TableHeaderColumn>
+              </TableRow>
+            </TableHeader>
             <TableBody displayRowCheckbox={false}>
               {this.zonesList()}
             </TableBody>
@@ -118,5 +154,11 @@ class ZoneAutoComplete extends Component {
     );
   }
 }
+
+ZoneAutoComplete.defaultProps = {
+  zones: moment.tz
+    .names()
+    .map((zone, i) => ({ id: i, value: zone, text: niceZone(zone) }))
+};
 
 export default ZoneAutoComplete;
