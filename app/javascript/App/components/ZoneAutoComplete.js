@@ -63,7 +63,7 @@ class ZoneAutoComplete extends Component {
       .map((zone, i) => (
         <ListItem
           key={i}
-          onClick={e => this.handleUpdate(e, zone)}
+          onTouchTap={e => this.handleUpdate(e, zone)}
           primaryText={niceZone(zone)}
         />
       ));
@@ -102,7 +102,7 @@ class ZoneAutoComplete extends Component {
           modal={false}
           title="Select timezone from list"
         >
-          <List disableKeyboardFocus={true}>
+          <List>
             {this.zonesList()}
           </List>
         </Dialog>
