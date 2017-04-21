@@ -5,6 +5,14 @@ import IconButton from "material-ui/IconButton";
 import FlatButton from "material-ui/FlatButton";
 import TextField from "material-ui/TextField";
 import { List, ListItem } from "material-ui/List";
+import {
+  Table,
+  TableBody,
+  TableHeader,
+  TableHeaderColumn,
+  TableRow,
+  TableRowColumn
+} from "material-ui/Table";
 import Dialog from "material-ui/Dialog";
 import moment from "moment-timezone";
 import { niceZone } from "../utils/formatter";
@@ -58,15 +66,13 @@ class ZoneAutoComplete extends Component {
   }
 
   zonesList() {
-    return moment.tz
-      .names()
-      .map((zone, i) => (
-        <ListItem
-          key={i}
-          onTouchTap={e => this.handleUpdate(e, zone)}
-          primaryText={niceZone(zone)}
-        />
-      ));
+    return moment.tz.names().map((zone, i) => (
+      <TableRow key={i} onTouchTap={e => this.handleUpdate(e, zone)}>
+        <TableRowColumn>
+          {niceZone(zone)}
+        </TableRowColumn>
+      </TableRow>
+    ));
   }
 
   deleteButton() {
@@ -102,7 +108,11 @@ class ZoneAutoComplete extends Component {
           modal={false}
           title="Select timezone from list"
         >
-          {this.zonesList()}
+          <Table>
+            <TableBody displayRowCheckbox={false}>
+              {this.zonesList()}
+            </TableBody>
+          </Table>
         </Dialog>
       </div>
     );

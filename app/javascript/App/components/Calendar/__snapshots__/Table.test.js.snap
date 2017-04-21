@@ -211,7 +211,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 12:00 AM
+        Sat, 12:00 AM
          - 
         12:30 AM
         
@@ -258,7 +258,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 12:30 AM
+        Sat, 12:30 AM
          - 
         1:00 AM
         
@@ -305,7 +305,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 1:00 AM
+        Sat, 1:00 AM
          - 
         1:30 AM
         
@@ -352,7 +352,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 1:30 AM
+        Sat, 1:30 AM
          - 
         2:00 AM
         
@@ -399,7 +399,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 2:00 AM
+        Sat, 2:00 AM
          - 
         2:30 AM
         
@@ -446,7 +446,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 2:30 AM
+        Sat, 2:30 AM
          - 
         3:00 AM
         
@@ -493,7 +493,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 3:00 AM
+        Sat, 3:00 AM
          - 
         3:30 AM
         
@@ -540,7 +540,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 3:30 AM
+        Sat, 3:30 AM
          - 
         4:00 AM
         
@@ -587,7 +587,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 4:00 AM
+        Sat, 4:00 AM
          - 
         4:30 AM
         
@@ -634,7 +634,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 4:30 AM
+        Sat, 4:30 AM
          - 
         5:00 AM
         
@@ -681,7 +681,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 5:00 AM
+        Sat, 5:00 AM
          - 
         5:30 AM
         
@@ -728,7 +728,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 5:30 AM
+        Sat, 5:30 AM
          - 
         6:00 AM
         
@@ -775,7 +775,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 6:00 AM
+        Sat, 6:00 AM
          - 
         6:30 AM
         
@@ -822,7 +822,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 6:30 AM
+        Sat, 6:30 AM
          - 
         7:00 AM
         
@@ -869,7 +869,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 7:00 AM
+        Sat, 7:00 AM
          - 
         7:30 AM
         
@@ -916,7 +916,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 7:30 AM
+        Sat, 7:30 AM
          - 
         8:00 AM
         
@@ -963,7 +963,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 8:00 AM
+        Sat, 8:00 AM
          - 
         8:30 AM
         
@@ -996,7 +996,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#e0f2f1",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1009,7 +1010,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 8:30 AM
+        Sat, 8:30 AM
          - 
         9:00 AM
         
@@ -1042,7 +1043,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1055,7 +1057,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 9:00 AM
+        Sat, 9:00 AM
          - 
         9:30 AM
         
@@ -1088,7 +1090,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1101,7 +1104,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 9:30 AM
+        Sat, 9:30 AM
          - 
         10:00 AM
         
@@ -1134,7 +1137,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1147,7 +1151,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 10:00 AM
+        Sat, 10:00 AM
          - 
         10:30 AM
         
@@ -1180,7 +1184,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1193,7 +1198,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 10:30 AM
+        Sat, 10:30 AM
          - 
         11:00 AM
         
@@ -1226,7 +1231,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1239,7 +1245,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 11:00 AM
+        Sat, 11:00 AM
          - 
         11:30 AM
         
@@ -1272,7 +1278,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1285,7 +1292,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 11:30 AM
+        Sat, 11:30 AM
          - 
         12:00 PM
         
@@ -1318,7 +1325,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1331,7 +1339,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 12:00 PM
+        Sat, 12:00 PM
          - 
         12:30 PM
         
@@ -1364,7 +1372,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1377,7 +1386,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 12:30 PM
+        Sat, 12:30 PM
          - 
         1:00 PM
         
@@ -1410,7 +1419,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1423,7 +1433,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 1:00 PM
+        Sat, 1:00 PM
          - 
         1:30 PM
         
@@ -1456,7 +1466,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1469,7 +1480,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 1:30 PM
+        Sat, 1:30 PM
          - 
         2:00 PM
         
@@ -1502,7 +1513,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1515,7 +1527,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 2:00 PM
+        Sat, 2:00 PM
          - 
         2:30 PM
         
@@ -1548,7 +1560,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1561,7 +1574,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 2:30 PM
+        Sat, 2:30 PM
          - 
         3:00 PM
         
@@ -1594,7 +1607,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1607,7 +1621,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 3:00 PM
+        Sat, 3:00 PM
          - 
         3:30 PM
         
@@ -1640,7 +1654,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1653,7 +1668,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 3:30 PM
+        Sat, 3:30 PM
          - 
         4:00 PM
         
@@ -1686,7 +1701,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1699,7 +1715,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 4:00 PM
+        Sat, 4:00 PM
          - 
         4:30 PM
         
@@ -1732,7 +1748,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#b2dfdb",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1745,7 +1762,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 4:30 PM
+        Sat, 4:30 PM
          - 
         5:00 PM
         
@@ -1778,7 +1795,8 @@ exports[`Print out a table 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "#e0f2f1",
+            "backgroundColor": "#fafafa",
+            "color": "#bdbdbd",
             "fontSize": 13,
             "height": 48,
             "muiPrepared": true,
@@ -1791,7 +1809,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 5:00 PM
+        Sat, 5:00 PM
          - 
         5:30 PM
         
@@ -1838,7 +1856,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 5:30 PM
+        Sat, 5:30 PM
          - 
         6:00 PM
         
@@ -1885,7 +1903,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 6:00 PM
+        Sat, 6:00 PM
          - 
         6:30 PM
         
@@ -1932,7 +1950,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 6:30 PM
+        Sat, 6:30 PM
          - 
         7:00 PM
         
@@ -1979,7 +1997,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 7:00 PM
+        Sat, 7:00 PM
          - 
         7:30 PM
         
@@ -2026,7 +2044,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 7:30 PM
+        Sat, 7:30 PM
          - 
         8:00 PM
         
@@ -2073,7 +2091,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 8:00 PM
+        Sat, 8:00 PM
          - 
         8:30 PM
         
@@ -2120,7 +2138,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 8:30 PM
+        Sat, 8:30 PM
          - 
         9:00 PM
         
@@ -2167,7 +2185,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 9:00 PM
+        Sat, 9:00 PM
          - 
         9:30 PM
         
@@ -2214,7 +2232,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 9:30 PM
+        Sat, 9:30 PM
          - 
         10:00 PM
         
@@ -2261,7 +2279,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 10:00 PM
+        Sat, 10:00 PM
          - 
         10:30 PM
         
@@ -2308,7 +2326,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 10:30 PM
+        Sat, 10:30 PM
          - 
         11:00 PM
         
@@ -2355,7 +2373,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 11:00 PM
+        Sat, 11:00 PM
          - 
         11:30 PM
         
@@ -2402,7 +2420,7 @@ exports[`Print out a table 1`] = `
           }
         }
       >
-        Fri, 11:30 PM
+        Sat, 11:30 PM
          - 
         12:00 AM
         (+1)
