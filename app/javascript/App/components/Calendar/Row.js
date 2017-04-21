@@ -55,4 +55,4 @@ class Row extends Component {
   }
 }
 
-module.exports = Row;
+export default Row;

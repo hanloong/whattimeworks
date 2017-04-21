@@ -60,4 +60,4 @@ const dateToMinutes = date => {
   return date.hours() * 60 + date.minutes();
 };
 
-module.exports = getCalendarState;
+export default getCalendarState;

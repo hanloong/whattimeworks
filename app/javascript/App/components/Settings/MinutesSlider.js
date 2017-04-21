@@ -65,4 +65,4 @@ SettingsMinutesSlider.defaultProps = {
   step: 15
 };
 
-module.exports = SettingsMinutesSlider;
+export default SettingsMinutesSlider;
