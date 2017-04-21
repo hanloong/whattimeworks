@@ -102,7 +102,7 @@ class ZoneAutoComplete extends Component {
           modal={false}
           title="Select timezone from list"
         >
-          <List isKeyboardFocused={false}>
+          <List disableKeyboardFocus={true}>
             {this.zonesList()}
           </List>
         </Dialog>
