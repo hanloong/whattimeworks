@@ -28,7 +28,7 @@ const Table = ({ actions, zones, calendar }) => {
             </TableHeaderColumn>
           ))}
           <th style={style.th} key="new-zone">
-            <ZoneAutoComplete actions={actions} deletable={false} value={""} />
+            <ZoneAutoComplete actions={actions} deletable={false} />
           </th>
         </tr>
       </thead>
