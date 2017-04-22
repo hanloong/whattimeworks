@@ -12,6 +12,8 @@ const style = {
 };
 
 class Header extends Component {
+  static staticProperty = "babelIsCool";
+
   constructor(props) {
     super(props);
 

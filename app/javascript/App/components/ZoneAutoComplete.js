@@ -12,7 +12,7 @@ import {
   TableRow,
   TableRowColumn
 } from "material-ui/Table";
-import Dialog from "material-ui/Dialog";
+import Dialog from "./Dialog";
 import moment from "moment-timezone";
 import { niceZone } from "../utils/formatter";
 
