@@ -40,8 +40,10 @@ class Row extends Component {
     const cells = row.times.map((time, i) => {
       return (
         <TableRowColumn key={i} style={this.cellStyle(time)}>
-          {time.startTime} - {time.endTime}
-          {this.getDiffDays(time)}
+          <span style={time.past ? { textDecoration: "line-through" } : {}}>
+            {time.startTime} - {time.endTime}
+            {this.getDiffDays(time)}
+          </span>
         </TableRowColumn>
       );
     });

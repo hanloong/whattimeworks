@@ -13,6 +13,7 @@ test("converts the state to calendar friedly format", () => {
         startTime: "Mon, 12:00 AM",
         endTime: "12:30 AM",
         days: 0,
+        past: true,
         status: "INVALID",
         zone: "Australia/Sydney"
       }

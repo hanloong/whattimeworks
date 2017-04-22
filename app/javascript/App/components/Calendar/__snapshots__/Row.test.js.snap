@@ -23,10 +23,18 @@ exports[`Print out a table row 1`] = `
       }
     }
   >
-    Sat, 12:00 AM
-     - 
-    12:30 AM
-    
+    <span
+      style={
+        Object {
+          "textDecoration": "line-through",
+        }
+      }
+    >
+      Sat, 12:00 AM
+       - 
+      12:30 AM
+      
+    </span>
   </td>
   <td
     className={undefined}

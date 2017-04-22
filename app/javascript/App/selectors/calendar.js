@@ -16,7 +16,8 @@ const getCalendarState = state => {
           startTime: start.format("ddd, h:mm A"),
           endTime: end.format("h:mm A"),
           days: end.dayOfYear() - start.dayOfYear(),
-          status: timeStatus(state, start, end, offset)
+          status: timeStatus(state, start, end, offset),
+          past: start.isBefore()
         };
       })
     )
