@@ -1,14 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import ReactDOM from "react-dom";
-import EventListener from "react-event-listener";
-import keycode from "keycode";
-import transitions from "material-ui/styles/transitions";
 import Overlay from "material-ui/internal/Overlay";
 import RenderToLayer from "material-ui/internal/RenderToLayer";
 import Paper from "material-ui/Paper";
-
-import ReactTransitionGroup from "react-addons-transition-group";
 
 class TransitionItem extends Component {
   static propTypes = {
@@ -88,15 +83,11 @@ function getStyles(props, context) {
       top: 0,
       left: open ? 0 : -10000,
       width: "100%",
-      height: "100%",
-      transition: open
-        ? transitions.easeOut("0ms", "left", "0ms")
-        : transitions.easeOut("0ms", "left", "450ms")
+      height: "100%"
     },
     content: {
       boxSizing: "border-box",
       WebkitTapHighlightColor: "rgba(0,0,0,0)", // Remove mobile color flashing (deprecated)
-      transition: transitions.easeOut(),
       position: "relative",
       width: "100%",
       maxWidth: spacing.desktopKeylineIncrement * 12,
@@ -237,16 +228,6 @@ class DialogInline extends Component {
     this.requestClose(false);
   };
 
-  handleKeyUp = event => {
-    if (keycode(event) === "esc") {
-      this.requestClose(false);
-    }
-  };
-
-  handleResize = () => {
-    this.positionDialog();
-  };
-
   render() {
     const {
       actions,
@@ -289,51 +270,28 @@ class DialogInline extends Component {
         {React.Children.toArray(actions)}
       </div>;
 
-    let titleElement = title;
-    if (React.isValidElement(title)) {
-      titleElement = React.cloneElement(title, {
-        className: title.props.className || titleClassName,
-        style: prepareStyles(Object.assign(styles.title, title.props.style))
-      });
-    } else if (typeof title === "string") {
-      titleElement = (
-        <h3 className={titleClassName} style={prepareStyles(styles.title)}>
-          {title}
-        </h3>
-      );
-    }
+    let titleElement = (
+      <h3 className={titleClassName} style={prepareStyles(styles.title)}>
+        {title}
+      </h3>
+    );
 
     return (
       <div className={className} style={prepareStyles(styles.root)}>
         {open &&
-          <EventListener
-            target="window"
-            onKeyUp={this.handleKeyUp}
-            onResize={this.handleResize}
-          />}
-        <ReactTransitionGroup
-          component="div"
-          ref="dialogWindow"
-          transitionAppear={true}
-          transitionAppearTimeout={450}
-          transitionEnter={true}
-          transitionEnterTimeout={450}
-        >
-          {open &&
-            <TransitionItem className={contentClassName} style={styles.content}>
-              <Paper style={{ height: "100vh" }} zDepth={4}>
-                {titleElement}
-                <div
-                  ref="dialogContent"
-                  className={bodyClassName}
-                  style={prepareStyles(styles.body)}
-                >
-                  {children}
-                </div>
-                {actionsContainer}
-              </Paper>
-            </TransitionItem>}
-        </ReactTransitionGroup>
+          <TransitionItem className={contentClassName} style={styles.content}>
+            <Paper style={{ height: "100vh" }} zDepth={4}>
+              {titleElement}
+              <div
+                ref="dialogContent"
+                className={bodyClassName}
+                style={prepareStyles(styles.body)}
+              >
+                {children}
+              </div>
+              {actionsContainer}
+            </Paper>
+          </TransitionItem>}
         <Overlay
           show={open}
           className={overlayClassName}

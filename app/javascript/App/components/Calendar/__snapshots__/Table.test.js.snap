@@ -77,31 +77,23 @@ exports[`Print out a table 1`] = `
             tabIndex={0}
             type="button"
           >
-            <div
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchStart={[Function]}
-            >
-              <span
-                style={
-                  Object {
-                    "fontSize": 14,
-                    "fontWeight": 500,
-                    "letterSpacing": 0,
-                    "muiPrepared": true,
-                    "paddingLeft": 16,
-                    "paddingRight": 16,
-                    "position": "relative",
-                    "textTransform": "uppercase",
-                    "verticalAlign": "middle",
-                  }
+            <span
+              style={
+                Object {
+                  "fontSize": 14,
+                  "fontWeight": 500,
+                  "letterSpacing": 0,
+                  "muiPrepared": true,
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                  "position": "relative",
+                  "textTransform": "uppercase",
+                  "verticalAlign": "middle",
                 }
-              >
-                Australia - Sydney
-              </span>
-            </div>
+              }
+            >
+              Australia - Sydney
+            </span>
           </button>
         </div>
       </th>
@@ -158,31 +150,23 @@ exports[`Print out a table 1`] = `
             tabIndex={0}
             type="button"
           >
-            <div
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchStart={[Function]}
-            >
-              <span
-                style={
-                  Object {
-                    "fontSize": 14,
-                    "fontWeight": 500,
-                    "letterSpacing": 0,
-                    "muiPrepared": true,
-                    "paddingLeft": 16,
-                    "paddingRight": 16,
-                    "position": "relative",
-                    "textTransform": "uppercase",
-                    "verticalAlign": "middle",
-                  }
+            <span
+              style={
+                Object {
+                  "fontSize": 14,
+                  "fontWeight": 500,
+                  "letterSpacing": 0,
+                  "muiPrepared": true,
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                  "position": "relative",
+                  "textTransform": "uppercase",
+                  "verticalAlign": "middle",
                 }
-              >
-                Add timezone
-              </span>
-            </div>
+              }
+            >
+              Add timezone
+            </span>
           </button>
         </div>
       </th>

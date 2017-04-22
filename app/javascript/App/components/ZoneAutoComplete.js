@@ -91,6 +91,7 @@ class ZoneAutoComplete extends Component {
           <TableRowColumn>
             <FlatButton
               label={zone.text}
+              disableTouchRipple={true}
               primary={true}
               style={style.label}
               fullWidth
@@ -105,6 +106,7 @@ class ZoneAutoComplete extends Component {
     if (this.props.deletable) {
       return (
         <FlatButton
+          disableTouchRipple={true}
           onTouchTap={this.handleDelete}
           style={style.iconButton}
           icon={<DeleteIcon />}
@@ -119,7 +121,11 @@ class ZoneAutoComplete extends Component {
     const zoneLabel = value ? niceZone(this.props.value) : "Add timezone";
     return (
       <div>
-        <FlatButton onTouchTap={this.handleOpen} label={zoneLabel} />
+        <FlatButton
+          disableTouchRipple={true}
+          onTouchTap={this.handleOpen}
+          label={zoneLabel}
+        />
         {this.deleteButton()}
         <Dialog
           autoScrollBodyContent={true}

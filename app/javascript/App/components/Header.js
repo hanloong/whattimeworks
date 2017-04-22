@@ -45,6 +45,7 @@ class Header extends Component {
 
     let datePicker = (
       <DatePicker
+        underlineShow={false}
         defaultDate={moment(date).toDate()}
         formatDate={this.formatDate}
         id="date-picker"
@@ -54,8 +55,12 @@ class Header extends Component {
     );
 
     return (
-      <div>
-        <AppBar onLeftIconButtonTouchTap={this.toggleDraw} title={datePicker} />
+      <div style={{ paddingTop: "64px" }}>
+        <AppBar
+          style={{ boxShadow: "none", position: "fixed", top: "0px" }}
+          onLeftIconButtonTouchTap={this.toggleDraw}
+          title={datePicker}
+        />
         <Drawer
           docked={false}
           onRequestChange={this.toggleDraw}
