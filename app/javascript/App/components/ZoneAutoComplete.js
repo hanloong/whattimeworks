@@ -36,7 +36,7 @@ class ZoneAutoComplete extends Component {
 
     this.state = {
       open: false,
-      zones: props.zones
+      zones: []
     };
 
     this.handleUpdate = this.handleUpdate.bind(this);
@@ -52,6 +52,12 @@ class ZoneAutoComplete extends Component {
       );
       this.setState({ zones: zones });
     }, 250);
+  }
+
+  componentDidMount() {
+    this.setState({
+      zones: this.props.zones
+    });
   }
 
   handleUpdate(event, newValue) {
