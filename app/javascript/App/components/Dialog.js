@@ -98,7 +98,7 @@ function getStyles(props, context) {
       WebkitTapHighlightColor: "rgba(0,0,0,0)", // Remove mobile color flashing (deprecated)
       transition: transitions.easeOut(),
       position: "relative",
-      width: "75%",
+      width: "100%",
       maxWidth: spacing.desktopKeylineIncrement * 12,
       margin: "0 auto",
       zIndex: zIndex.dialog
