@@ -4,6 +4,7 @@ import DeleteIcon from "material-ui/svg-icons/action/delete";
 import IconButton from "material-ui/IconButton";
 import FlatButton from "material-ui/FlatButton";
 import TextField from "material-ui/TextField";
+import debounce from "lodash/throttle";
 import {
   Table,
   TableBody,
@@ -35,14 +36,22 @@ class ZoneAutoComplete extends Component {
 
     this.state = {
       open: false,
-      filter: ""
+      zones: props.zones
     };
 
     this.handleUpdate = this.handleUpdate.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
     this.handleOpen = this.handleOpen.bind(this);
     this.handleClose = this.handleClose.bind(this);
-    this.updateFilter = this.updateFilter.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+
+    this.updateFilter = debounce(() => {
+      let searchText = document.getElementById("filterTextField").value;
+      let zones = this.props.zones.filter(
+        zone => zone.text.match(new RegExp(searchText, "i")) !== null
+      );
+      this.setState({ zones: zones });
+    }, 250);
   }
 
   handleUpdate(event, newValue) {
@@ -55,10 +64,8 @@ class ZoneAutoComplete extends Component {
     this.handleClose();
   }
 
-  updateFilter(event) {
-    this.setState({
-      filter: event.target.value
-    });
+  handleChange(event) {
+    this.updateFilter();
   }
 
   handleDelete() {
@@ -79,27 +86,23 @@ class ZoneAutoComplete extends Component {
   }
 
   zonesList() {
-    return this.props.zones
-      .filter(
-        zone => zone.text.match(new RegExp(this.state.filter, "i")) !== null
-      )
-      .map(zone => (
-        <TableRow
-          key={zone.id}
-          onTouchTap={e => this.handleUpdate(e, zone.value)}
-        >
-          <TableRowColumn>
-            <FlatButton
-              label={zone.text}
-              disableTouchRipple={true}
-              primary={true}
-              style={style.label}
-              fullWidth
-              onTouchTap={e => this.handleUpdate(e, zone.value)}
-            />
-          </TableRowColumn>
-        </TableRow>
-      ));
+    return this.state.zones.map(zone => (
+      <TableRow
+        key={zone.id}
+        onTouchTap={e => this.handleUpdate(e, zone.value)}
+      >
+        <TableRowColumn>
+          <FlatButton
+            label={zone.text}
+            disableTouchRipple={true}
+            primary={true}
+            style={style.label}
+            fullWidth
+            onTouchTap={e => this.handleUpdate(e, zone.value)}
+          />
+        </TableRowColumn>
+      </TableRow>
+    ));
   }
 
   deleteButton() {
@@ -140,8 +143,9 @@ class ZoneAutoComplete extends Component {
                 <TableHeaderColumn>
                   <TextField
                     style={style.filterInput}
-                    value={this.state.filter}
-                    onChange={this.updateFilter}
+                    id="filterTextField"
+                    defaultValue=""
+                    onChange={this.handleChange}
                     hintText="filter timezones"
                   />
                 </TableHeaderColumn>
