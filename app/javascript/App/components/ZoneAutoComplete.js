@@ -87,10 +87,7 @@ class ZoneAutoComplete extends Component {
 
   zonesList() {
     return this.state.zones.map(zone => (
-      <TableRow
-        key={zone.id}
-        onTouchTap={e => this.handleUpdate(e, zone.value)}
-      >
+      <TableRow key={zone.id}>
         <TableRowColumn>
           <FlatButton
             label={zone.text}
