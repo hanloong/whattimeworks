@@ -2011,7 +2011,11 @@ exports[`Print out a table 1`] = `
         }
       >
         <span
-          style={Object {}}
+          style={
+            Object {
+              "textDecoration": "line-through",
+            }
+          }
         >
           Sat, 4:30 PM
            - 
