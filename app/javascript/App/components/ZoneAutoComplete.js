@@ -115,10 +115,17 @@ class ZoneAutoComplete extends Component {
     }
   }
 
+  dialogActions() {
+    return [
+      <FlatButton label="Cancel" primary={true} onTouchTap={this.handleClose} />
+    ];
+  }
+
   render() {
     const { value, zone, index } = this.props;
     let deleteButton, radios;
     const zoneLabel = value ? niceZone(this.props.value) : "Add timezone";
+
     return (
       <div>
         <FlatButton
@@ -128,6 +135,7 @@ class ZoneAutoComplete extends Component {
         />
         {this.deleteButton()}
         <Dialog
+          actions={this.dialogActions()}
           autoScrollBodyContent={true}
           onRequestClose={this.handleClose}
           open={this.state.open}

@@ -1,78 +1,16 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import ReactDOM from "react-dom";
+import EventListener from "react-event-listener";
 import Overlay from "material-ui/internal/Overlay";
 import RenderToLayer from "material-ui/internal/RenderToLayer";
 import Paper from "material-ui/Paper";
 
-class TransitionItem extends Component {
-  static propTypes = {
-    children: PropTypes.node,
-    style: PropTypes.object
-  };
-
-  static contextTypes = {
-    muiTheme: PropTypes.object.isRequired
-  };
-
-  state = {
-    style: {}
-  };
-
-  componentWillUnmount() {
-    clearTimeout(this.enterTimeout);
-    clearTimeout(this.leaveTimeout);
-  }
-
-  componentWillEnter(callback) {
-    this.componentWillAppear(callback);
-  }
-
-  componentWillAppear(callback) {
-    const spacing = this.context.muiTheme.baseTheme.spacing;
-
-    this.setState({
-      style: {
-        opacity: 1
-      }
-    });
-
-    this.enterTimeout = setTimeout(callback, 450); // matches transition duration
-  }
-
-  componentWillLeave(callback) {
-    this.setState({
-      style: {
-        opacity: 0
-      }
-    });
-
-    this.leaveTimeout = setTimeout(callback, 450); // matches transition duration
-  }
-
-  render() {
-    const { style, children, ...other } = this.props;
-
-    const { prepareStyles } = this.context.muiTheme;
-
-    return (
-      <div
-        {...other}
-        style={prepareStyles(Object.assign({}, this.state.style, style))}
-      >
-        {children}
-      </div>
-    );
-  }
-}
-
 function getStyles(props, context) {
   const { autoScrollBodyContent, open } = props;
-
   const { baseTheme: { spacing, palette }, dialog, zIndex } = context.muiTheme;
 
   const gutter = spacing.desktopGutter;
-  const borderScroll = `1px solid ${palette.borderColor}`;
 
   return {
     root: {
@@ -92,16 +30,16 @@ function getStyles(props, context) {
       width: "100%",
       maxWidth: spacing.desktopKeylineIncrement * 12,
       margin: "0 auto",
-      zIndex: zIndex.dialog
+      zIndex: zIndex.dialog,
+      top: "50%",
+      transform: "translate(0, -50%)"
     },
     actionsContainer: {
       boxSizing: "border-box",
       WebkitTapHighlightColor: "rgba(0,0,0,0)", // Remove mobile color flashing (deprecated)
       padding: 8,
       width: "100%",
-      textAlign: "right",
-      marginTop: autoScrollBodyContent ? -1 : 0,
-      borderTop: autoScrollBodyContent ? borderScroll : "none"
+      textAlign: "right"
     },
     overlay: {
       zIndex: zIndex.dialogOverlay
@@ -202,10 +140,12 @@ class DialogInline extends Component {
     if (autoDetectWindowHeight || autoScrollBodyContent) {
       const styles = getStyles(this.props, this.context);
       styles.body = Object.assign(styles.body, bodyStyle);
-      let maxDialogContentHeight = clientHeight;
+      let maxDialogContentHeight = Math.min(500, clientHeight);
 
       if (title)
-        maxDialogContentHeight -= dialogContent.previousSibling.offsetHeight;
+        maxDialogContentHeight -=
+          dialogContent.previousSibling.offsetHeight +
+          dialogContent.nextSibling.offsetHeight;
 
       dialogContent.style.maxHeight = `${maxDialogContentHeight}px`;
     }
@@ -267,18 +207,21 @@ class DialogInline extends Component {
         {React.Children.toArray(actions)}
       </div>;
 
-    let titleElement = (
-      <h3 className={titleClassName} style={prepareStyles(styles.title)}>
-        {title}
-      </h3>
-    );
-
     return (
       <div className={className} style={prepareStyles(styles.root)}>
         {open &&
-          <TransitionItem className={contentClassName} style={styles.content}>
-            <Paper style={{ height: "100vh" }} zDepth={4}>
-              {titleElement}
+          <div className={contentClassName} style={styles.content}>
+            <EventListener
+              target="window"
+              onResize={e => this.positionDialog()}
+            />
+            <Paper style={{ maxHeight: "100vh" }} zDepth={4}>
+              <h3
+                className={titleClassName}
+                style={prepareStyles(styles.title)}
+              >
+                {title}
+              </h3>
               <div
                 ref="dialogContent"
                 className={bodyClassName}
@@ -288,12 +231,12 @@ class DialogInline extends Component {
               </div>
               {actionsContainer}
             </Paper>
-          </TransitionItem>}
+          </div>}
         <Overlay
           show={open}
           className={overlayClassName}
           style={styles.overlay}
-          onTouchTap={this.handleTouchTapOverlay}
+          onClick={this.handleTouchTapOverlay}
         />
       </div>
     );
@@ -302,94 +245,26 @@ class DialogInline extends Component {
 
 class Dialog extends Component {
   static propTypes = {
-    /**
-     * Action buttons to display below the Dialog content (`children`).
-     * This property accepts either a React element, or an array of React elements.
-     */
     actions: PropTypes.node,
-    /**
-     * The `className` to add to the actions container's root element.
-     */
     actionsContainerClassName: PropTypes.string,
-    /**
-     * Overrides the inline-styles of the actions container's root element.
-     */
     actionsContainerStyle: PropTypes.object,
-    /**
-     * If set to true, the height of the `Dialog` will be auto detected. A max height
-     * will be enforced so that the content does not extend beyond the viewport.
-     */
     autoDetectWindowHeight: PropTypes.bool,
-    /**
-     * If set to true, the body content of the `Dialog` will be scrollable.
-     */
     autoScrollBodyContent: PropTypes.bool,
-    /**
-     * The `className` to add to the content's root element under the title.
-     */
     bodyClassName: PropTypes.string,
-    /**
-     * Overrides the inline-styles of the content's root element under the title.
-     */
     bodyStyle: PropTypes.object,
-    /**
-     * The contents of the `Dialog`.
-     */
     children: PropTypes.node,
-    /**
-     * The css class name of the root element.
-     */
     className: PropTypes.string,
-    /**
-     * The `className` to add to the content container.
-     */
     contentClassName: PropTypes.string,
-    /**
-     * Overrides the inline-styles of the content container.
-     */
     contentStyle: PropTypes.object,
-    /**
-     * Force the user to use one of the actions in the `Dialog`.
-     * Clicking outside the `Dialog` will not trigger the `onRequestClose`.
-     */
     modal: PropTypes.bool,
-    /**
-     * Fired when the `Dialog` is requested to be closed by a click outside the `Dialog` or on the buttons.
-     *
-     * @param {bool} buttonClicked Determines whether a button click triggered this request.
-     */
     onRequestClose: PropTypes.func,
-    /**
-     * Controls whether the Dialog is opened or not.
-     */
     open: PropTypes.bool.isRequired,
-    /**
-     * The `className` to add to the `Overlay` component that is rendered behind the `Dialog`.
-     */
     overlayClassName: PropTypes.string,
-    /**
-     * Overrides the inline-styles of the `Overlay` component that is rendered behind the `Dialog`.
-     */
     overlayStyle: PropTypes.object,
-    /**
-     * Determines whether the `Dialog` should be repositioned when it's contents are updated.
-     */
     repositionOnUpdate: PropTypes.bool,
-    /**
-     * Override the inline-styles of the root element.
-     */
     style: PropTypes.object,
-    /**
-     * The title to display on the `Dialog`. Could be number, string, element or an array containing these types.
-     */
     title: PropTypes.node,
-    /**
-     * The `className` to add to the title's root container element.
-     */
     titleClassName: PropTypes.string,
-    /**
-     * Overrides the inline-styles of the title's root container element.
-     */
     titleStyle: PropTypes.object
   };
 
